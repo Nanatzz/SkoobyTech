@@ -4,30 +4,127 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./myApp/public/css/products.css">
+ <link rel="stylesheet" href="../public/css/products.css">
  <title>Categorias de cursos | SkoobyTech - Escola de Tecnologia</title>
 </head>
 <body>
 
  <header>
-  <span class="menu-entradas">
-   <img href="" alt="Logo SkoobyTech - Escola de Tecnologia">
-   <a><h2>HOME</h2></a>
-   <a><h2>CATEGORIAS</h2></a>
-   <a><h2>ENSINE NA SKOOBY</h2></a>
+  <nav id="menu-entradas">
+   <a href="#"><img id="logo-header" src="" alt="Logo SkoobyTech - Escola de Tecnologia"></a>
+   <a href=""><h2 class="nav-home">HOME</h2></a>
+   <a href=""><h2 class="nav-home">CATEGORIAS</h2></a>
+   <a href=""><h2 class="nav-home">ENSINE NA SKOOBY</h2></a>
+  </nav>
+
+  <span id="area-pesquisa">
+   <p id="campo-pesquisa">O que você quer aprender?</p>
+   <img id="icone-campo-pesquisa" src="" alt="Ícone de lupa de pesquisa">
   </span>
 
-  <span class="caixa-pesquisa">
-   <p>O que você quer aprender?</p>
-   <img href="" alt="Ícone de lupa de pesquisa">
-  </span>
-
-  <span class="opcoes-user">
-   <img href="" alt="ícone de carrinho de compras">
-   <a><p>Entrar</p></a>
-   <button id="botao-cadastro"></button>
+  <span id="opcoes-user-header">
+   <img id="icone-carrinho" src="" alt="ícone de carrinho de compras">
+   <a href=""><p id="link-entrar">Entrar</p></a>
+   <a href="#"><button id="botao-cadastro">CADASTRE-SE</button></a>
   </span>
  </header>
+
+ <main>
+  <div id="botao-acessibilidade">
+   <img id="icone-acessibilidade" src="" alt="ícone do botão acessibilidade">
+  </div>
+
+  <section class="container-categorias">
+   <div class="categoria"></div>
+    <a href="#"><h2 class="titulo-categorias"></h2>Cursos em Back-End</a>
+    <div class="icone-seta-rolagem">
+     <img src="" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+    </div>
+    <div class="listagem-cursos">
+     <div class="curso-detalhes">
+      <div class="imagem-descritiva-curso"><img src="" alt=""></div>
+      <a class="descricao-curso" href="#"><h3>Iniciando em JavaScript</h3></a>
+      <p class="descricao-duracao-curso">Duração: 35 horas</p>
+      <p class="valor-curso">R$ 49,00</p>
+
+      <div class="opcoes-user-curso">
+       <button class="botao-carrinho-curso"><img src="" alt=" "></button>
+       <button class="botao-favoritar-curso"><img src="" alt=" "></button>
+       <a class="link-ver-detalhes" href="#">Ver detalhes</a>
+      </div>
+     </div>
+    </div>
+    <a class="link-ver-todos" href="#">Ver todos</a>
+   </div>
+
+   <div class="categoria"></div>
+    <a href="#"><h2 class="titulo-categorias"></h2>Cursos em Front-End</a>
+    <div class="icone-seta-rolagem">
+     <img src="" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+    </div>
+    <div class="listagem-cursos">
+     <div class="curso-detalhes">
+      <div class="imagem-descritiva-curso"><img src="" alt=""></div>
+      <a class="descricao-curso" href="#"><h3>Iniciando em CSS</h3></a>
+      <p class="descricao-duracao-curso">Duração: 35 horas</p>
+      <p class="valor-curso">R$ 49,00</p>
+
+      <div class="opcoes-user-curso">
+       <button class="botao-carrinho-curso"><img src="" alt=" "></button>
+       <button class="botao-favoritar-curso"><img src="" alt=" "></button>
+       <a class="link-ver-detalhes" href="#">Ver detalhes</a>
+      </div>
+     </div>
+    </div>
+    <a class="link-ver-todos" href="#">Ver todos</a>
+   </div>
+
+   <div class="categoria"></div>
+    <a href="#"><h2 class="titulo-categorias"></h2>Cursos Full Stack</a>
+    <div class="icone-seta-rolagem">
+     <img src="" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+    </div>
+    <div class="listagem-cursos">
+     <div class="curso-detalhes">
+      <div class="imagem-descritiva-curso"><img src="" alt=""></div>
+      <a class="descricao-curso" href="#"><h3>Intensivão Full Stack</h3></a>
+      <p class="descricao-duracao-curso">Duração: 200 horas</p>
+      <p class="valor-curso">R$ 149,00</p>
+
+      <div class="opcoes-user-curso">
+       <button class="botao-carrinho-curso"><img src="" alt=" "></button>
+       <button class="botao-favoritar-curso"><img src="" alt=" "></button>
+       <a class="link-ver-detalhes" href="#">Ver detalhes</a>
+      </div>
+     </div>
+    </div>
+    <a class="link-ver-todos" href="#">Ver todos</a>
+   </div>
+
+   <div class="categoria"></div>
+    <a href="#"><h2 class="titulo-categorias"></h2>Metodologias de Desenvolvimento</a>
+    <div class="icone-seta-rolagem">
+     <img src="" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+    </div>
+    <div class="listagem-cursos">
+     <div class="curso-detalhes">
+      <div class="imagem-descritiva-curso"><img src="" alt=""></div>
+      <a class="descricao-curso" href="#"><h3>Metodologia SCRUM</h3></a>
+      <p class="descricao-duracao-curso">Duração: 50 horas</p>
+      <p class="valor-curso">R$ 39,00</p>
+
+      <div class="opcoes-user-curso">
+       <button class="botao-carrinho-curso"><img src="" alt=" "></button>
+       <button class="botao-favoritar-curso"><img src="" alt=" "></button>
+       <a class="link-ver-detalhes" href="#">Ver detalhes</a>
+      </div>
+     </div>
+    </div>
+    <a class="link-ver-todos" href="#">Ver todos</a>
+   </div>
+  </section>
+
+ </main>
  
 </body>
 </html>
