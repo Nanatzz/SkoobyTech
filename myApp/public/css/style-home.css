@@ -16,12 +16,11 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 100px;
     background-color: #1C2124;
     margin-bottom: 2px;
-    box-shadow: 0px 0px 4px #121212;
 }
 
 header .logo{
@@ -151,3 +150,4 @@ img {
     justify-content: flex-end;
     
 }
+
