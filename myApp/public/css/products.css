@@ -1,7 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;800&display=swap');
+
 *{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
  background-color: #1C2124;
 }
+
+header {
+ box-shadow: 0px 0px 4px #121212;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+header nav #menu-entradas{
+ justify-content: space-around;
+ align-items: center;
+}
+
+header nav .nav-header{
+ color: #fff;
+ font-size: 15px;
+}
+
+span #area-pesquisa{
+ border-radius: 15%;
+ border: none;
+ background-color:#5A5F63;
+ width: 362px;
+ height: 33px;
+ justify-content: space-between;
+ align-items: center;
+}
+
+span #campo-pesquisa{
+ color: #C0C0C0;
+ font-size: 14px;
+}
+
+span #opcoes-user-header{
+ justify-content: space-around;
+ align-items: center;
+}
+
+span #icone-carrinho{
+ box-shadow: 3px 3px 3px #121212;
+}
+
+span #link-entrar{
+ color: #fff;
+ font-weight: 700;
+}
+
+span botton #botao-cadastro {
+ width: 121px;
+ height: 33px;
+ border-radius: 15%;
+ background-color: #fff;
+ color: #263238D9;
+ font-weight: 800;
+ align-items: center;
+ justify-content: center;
+}
+
+main{
+ display:flex;
+}
+
+main #botao-acessibilidade{
+ justify-content: flex-end;
+ align-items: center;
+}
+
 
