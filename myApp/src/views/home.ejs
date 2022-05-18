@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang              = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-home.css">
+    <meta charset       = "UTF-8">
+    <meta http-equiv    = "X-UA-Compatible" content="IE=edge">
+    <meta name          = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel           = "stylesheet" href="css/style-home.css">
     <title>SkoobyTech</title>
 </head>
 </html>
@@ -12,36 +12,36 @@
       <header>
       <%-include("partials/header") %>
       </header>
-      <main class="bodyhome">  
+      <main id          = "container-bodyhome">
+
+        <section class  = "mensagemhome">
+          <p >     A melhor plataforma de ensino tecnológico que te ajuda a ir atrás dos seus sonhos        </p>
+        </section>
+
+        <section class  = "arthome">
+        <img src        = "images/home/arthome.svg" alt="Art Home - SkoobyTech">
+        </section>
+                        
+        <section class  = "banner-carrossel">
+          <img class    = "carrossel" src="images/home/carrossel.svg" alt="Art Home - SkoobyTech">
+        </section>
         
-        <img class="arthome" src="images/home/arthome.svg" alt="Art Home - SkoobyTech">
-
-        <section>
-
-        <p id="mensagemhome">
-          A melhor plataforma de ensino tecnológico que te ajuda a ir atrás dos seus sonhos
-        </p>
-
+        <section class    = "arthome2" >
+          <img src="images/home/arthome2.svg" alt="Art Home - SkoobyTech">
         </section>
 
-        <section class="banner-carrossel">
-          <img class="carrossel" src="images/home/carrossel.svg" alt="Art Home - SkoobyTech">
-        </section>
-
-          <img class="arthome2" src="images/home/arthome2.svg" alt="Art Home - SkoobyTech">
-
-        <section class="categoriasdecursos">
+        <section class  = "categoriasdecursos">
           <!-- colocar lista de cursos home -->
         </section>
 
-        <section class="parcerias">
+        <section class  = "parcerias">
           <!-- colocar banner parcerias -->
         </section>
 
     </main>
     <footer>
       <%-include("partials/footer") %>
-     </footer>
+    </footer>
   </body>
 
 </html>

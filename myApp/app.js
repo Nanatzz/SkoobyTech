@@ -6,6 +6,7 @@ var logger = require('morgan');
 const productsRouter = require('./src/routes/productsRouter')
 const homeRouter = require('./src/routes/homeRouter')
 const internalProductRouter = require("./src/routes/internalProductRouter")
+const profileUserRouter = require("./src/routes/profileUserRouter")
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
@@ -14,6 +15,8 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname,'src','views'));
+
+
 
 app.set('view engine', 'ejs');
 
@@ -28,6 +31,7 @@ app.use('/users', usersRouter);
 app.get('/products', productsRouter)
 app.get("/home", homeRouter)
 app.get("/internalProduct", internalProductRouter);
+app.get("/profileUser", profileUserRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
