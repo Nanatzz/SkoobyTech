@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1C2124;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
-
 
 header {
     width: 100%;
@@ -43,4 +46,19 @@ header #logo-header{
     margin-right: 20px;
     margin-bottom: 10px;
     padding-left: 20px;
+}
+
+
+#parceiros {
+    display: flex;
+    background-color: #FE615C;
+    width: 100%;
+    height: 28px; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span #titulo-parceiros {
+    color: #FFFFFF;
+    justify-content: flex-start;
 }

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang              = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-home.css">
+    <%-include("partials/head") %>
+    <link rel           = "stylesheet" href="css/style-home.css">
     <title>SkoobyTech</title>
 </head>
 </html>
@@ -12,36 +10,47 @@
       <header>
       <%-include("partials/header") %>
       </header>
-      <main class="bodyhome">  
+      <main id          = "container-bodyhome">
+
+        <section class  = "mensagemhome">
+          <p >     A melhor plataforma de ensino tecnológico que te ajuda a ir atrás dos seus sonhos        </p>
+        </section>
+
+        <section class  = "arthome">
+        <img src        = "images/home/arthome.svg" alt="Art Home - SkoobyTech">
+        </section>
+                        
+        <section class  = "banner-carrossel">
+          <img class    = "carrossel" src="images/home/carrossel.svg" alt="Art Home - SkoobyTech">
+        </section>
         
-        <img class="arthome" src="images/home/arthome.svg" alt="Art Home - SkoobyTech">
-
-        <section>
-
-        <p id="mensagemhome">
-          A melhor plataforma de ensino tecnológico que te ajuda a ir atrás dos seus sonhos
-        </p>
-
+        <section class    = "arthome2" >
+          <img src="images/home/arthome2.svg" alt="Art Home - SkoobyTech">
         </section>
 
-        <section class="banner-carrossel">
-          <img class="carrossel" src="images/home/carrossel.svg" alt="Art Home - SkoobyTech">
-        </section>
+        <span id  = "categoriasdecursos-home">
 
-          <img class="arthome2" src="images/home/arthome2.svg" alt="Art Home - SkoobyTech">
+          <section class = "categoriashome">    <a href="#"><h2></h2>Cursos em Front-End</a>                                </section>
+          <section class = "categoriashome">    <a href="#"><h2"></h2>Cursos em Back-end</a>                                 </section>
+          <section class = "categoriashome">    <a href="#"><h2"></h2>Cursos em Full Stack</a>                               </section>
+          <section class = "categoriashome">    <a href="#"><h2"></h2>Cursos em Metodologias de Desenvolvimento</a>          </section>
+        
+        </span>
 
-        <section class="categoriasdecursos">
-          <!-- colocar lista de cursos home -->
-        </section>
-
-        <section class="parcerias">
-          <!-- colocar banner parcerias -->
-        </section>
+        <span id="parceiros">
+          <p id="titulo-parceiros">Com a parceria de empresas Tech em todo Brasil</p>
+          <img class="icones-parceiros" src="images/products/parceiro-stripe.svg" alt="Ícone parceiro Stripe">
+          <img class="icones-parceiros" src="images/products/parceiro-google.svg" alt="Ícone parceiro Google">
+          <img class="icones-parceiros" src="images/products/perceiro-adobe.svg" alt="Ícone parceiro Adobe">
+          <img class="icones-parceiros" src="images/products/parceiro-github.svg" alt="Ícone parceiro GitHub">
+          <img class="icones-parceiros" src="images/products/parceiro-DH.svg" alt="Ícone parceiro DigitalHouse">
+         </span>
+       
 
     </main>
     <footer>
       <%-include("partials/footer") %>
-     </footer>
+    </footer>
   </body>
 
 </html>
