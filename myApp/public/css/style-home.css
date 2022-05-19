@@ -126,8 +126,9 @@ header #logo-header{
 }
 .arthome {
     display: flex;
-    align-items: flex-end;
-             
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0px 0px 20px 35px;
 }
 
 .banner-carrossel {
