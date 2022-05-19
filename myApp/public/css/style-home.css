@@ -152,9 +152,9 @@ header #logo-header{
 #baixohome {
     padding-top: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0px 0px 20px 35px;
 }
 
 .banner-carrossel {
