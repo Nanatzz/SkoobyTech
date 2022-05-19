@@ -4,6 +4,7 @@
  box-sizing: border-box;
  font-family: 'Roboto', sans-serif;
  list-style-type: none;
+ text-decoration: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -46,16 +47,17 @@ header #logo-header{
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
- width: 362px;
- height: 33px;
+ width: 500px;
+ height: 37px;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ margin: 0px 10px;
 }
 
 #campo-pesquisa{
  color: #BABABA;
- font-size : 13px;
+ font-size : 15px;
  background-color: #373B3E;
  align-items: center;
  margin-left: 12px;
@@ -105,13 +107,115 @@ header #logo-header{
  justify-content: flex-end;
  align-items: flex-start;
  cursor: pointer;
- margin-top: 20px;
+ padding-top: 20px;
+ background-color: #1C2124;
 }
 
-#container-bodyproducts {
-    display: flex;
+#container-courses {
     flex-wrap: wrap;
     background-color: #1C2124;
+}
+
+#container-categorias{
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.categoria{
+    margin: 0px 0px 40px 0px;
+}
+
+
+.titulo-categorias{
+    color: #0071FF;
+    margin: 10px 10px 20px 40px;
+    text-decoration: underline;
+}
+
+.icone-seta-rolagem-esquerda{
+    width: 60px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #393C3D;
+    padding: 14px 5px;
+}
+
+.icone-seta-rolagem-direita{
+    width: 60px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #393C3D;
+    padding: 14px 0px 0px 11px;
+}
+
+.listagem-cursos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.curso-detalhes{
+    margin: 5px 10px 5px 0px;
+    padding: 0px 20px;
+}
+
+.descricao-curso{
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.descricao-duracao-curso{
+    margin: 5px 0px;
+    font-size: 14px;
+}
+
+.valor-curso{
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+.opcoes-user-curso{
+    margin: 10px 0px;
+}
+
+.botao-carrinho-curso{
+    border-radius: 5px;
+    border: none;
+    width: 37px;
+    height: 38px;
+    margin-right: 5px;
+    padding-right: 2px;
+    padding-top: 1px;
+}
+
+.botao-favoritar-curso{
+    border-radius: 5px;
+    border: none;
+    width: 37px;
+    height: 38px;
+    padding-top: 3px;
+    padding-left: 1px;
+}
+
+.link-ver-detalhes{
+    color: #fff;
+    font-weight: 700;
+    margin: 7px;
+    text-decoration: underline;
+}
+
+.link-ver-todos{
+    display: flex;
+    width: 100%;
+    font-weight: 900;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding-right: 50px;
+    background-color: #1C2124;
+    color: #0071FF;
+    text-decoration: underline;
 }
 
 #parceiros {
