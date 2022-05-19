@@ -33,6 +33,8 @@ app.get("/home", homeRouter)
 app.get("/internalProduct", internalProductRouter);
 app.get("/profileUser", profileUserRouter);
 
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
