@@ -24,6 +24,10 @@ app.get('/categorias', function (req,res) {
   res.render('products')
 })
 
+app.get('/finalizacao', function (req,res) {
+  res.render('checkout')
+})
+
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
