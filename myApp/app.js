@@ -28,6 +28,10 @@ app.get('/finalizacao', function (req,res) {
   res.render('checkout')
 })
 
+app.get('/curso', function (req,res) {
+  res.render('internalProduct')
+})
+
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
