@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
  margin: 0;
  padding: 0;
@@ -6,9 +8,7 @@
  list-style-type: none;
  text-decoration: none;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+   
 header {
  width: 100%;
  height: 82px;
@@ -16,34 +16,34 @@ header {
  justify-content: space-between;
  align-items: center;
  box-shadow: 0px 0px 4px #121212;
+ background-color: #1C2124;
  position: relative;
  z-index: 16;
- background-color: #1C2124;
 }
-
+   
 header #menu-entradas{
  display: flex;
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
 }
-
+   
 header nav .nav-header{
  font-size: 15px;
  margin: 0px 20px;
 }
-
+   
 .topico-header{
-    color: #fff;
-    text-decoration: none;
+ color: #fff;
+ text-decoration: none;
 }
-
+   
 header #logo-header{
  margin-right: 20px;
  margin-bottom: 10px;
  padding-left: 20px;
 }
-
+   
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
@@ -54,7 +54,7 @@ header #logo-header{
  align-items: center;
  margin: 0px 10px;
 }
-
+   
 #campo-pesquisa{
  color: #BABABA;
  font-size : 15px;
@@ -62,41 +62,39 @@ header #logo-header{
  align-items: center;
  margin-left: 12px;
 }
-
+   
 #icone-campo-pesquisa{
  background-color:#373B3E;
  margin-right: 12px;
 }
-
+   
 #opcoes-user-header{
  display: flex;
  justify-content: space-around;
  align-items: center;
  margin: 0px 30px;
 }
-
+   
 #icone-carrinho{
  cursor: pointer;
  margin-top: 2px;
 }
-
+   
 #link-entrar{
  color: #fff;
  font-weight: 700;
  margin: 0px 20px;
 }
-
+   
 #botao-cadastro {
  width: 125px;
- height: 37px;
- margin-bottom: 7px;
+ height: 35px;
+ margin-bottom: 3px;
  border-radius: 5px;
  border: none;
  background-color: #fff;
  color: #263238D9;
  font-weight: 800;
- align-items: center;
- justify-content: center;
  cursor: pointer;
  font-size: 14px;
 }
@@ -115,7 +113,6 @@ body{
  color: #fff;
  width: 100%;
  height: 851px;
- padding-top: 30px;
 }
 
 #mensagem-sucesso{
@@ -139,6 +136,7 @@ body{
  justify-content: center;
  align-items: flex-start;
  font-size: 17px;
+ padding-left: 150px;
 }
 
 .destaque-checkout{
@@ -154,9 +152,10 @@ body{
 #botoes-user{
  display: flex;
  justify-content: center;
+ padding-left: 120px;
 }
 
-button {
+#botoes-user button {
  cursor: pointer;
  background-color: #01B671;
  border: none;
@@ -181,7 +180,7 @@ button {
  display: flex;
  justify-content: flex-end;
  align-items: flex-start;
- margin: 100px 30px 0px 0px;
+ margin:100px 30px 0px;
 }
 
 
@@ -284,6 +283,7 @@ button {
 
 #redes-sociais{
     margin-right: 50px;
+    transition: all 0.5s;
 }
 
 .icones-redes-sociais{
