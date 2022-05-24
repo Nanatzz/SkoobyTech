@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <%-include("partials/head") %>
+ <link rel="stylesheet" href="css/checkout.css">
+ <title>SkoobyTech - Escola de Tecnologia</title>
+</head>
+<body>
+ <header>
+  <%-include("partials/header") %>
+ </header>
+
+ <div id="botao-acessibilidade">
+  <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
+ </div>
+
+ <main>
+  <span id="mensagem-sucesso">
+   <img id="image-check" src="images/checkout/image-check.svg" alt="Oba! Sua compra foi realizada com sucesso!">
+   <h2 id="compra-realizada">Oba! Sua compra foi realizada com sucesso!</h2>
+  </span>
+  <div id="paragrafo-mensagem-sucesso">
+   <p id="texto-checkout">Você pode acessar seu novo curso na área de Meu Aprendizado, no<br> <a href="/user"><strong class="destaque-checkout">Painel de Usuários</strong></a>, 
+    ou conferir seus outros cursos favoritados em<br> <a href="/favorites"><strong class="destaque-checkout">Favoritos</strong></a>.</p>
+  </div>
+
+  <div id="linha-divisoria"></div>
+
+  <span id="botoes-user">
+   <button type="submit" href="/home">Continuar comprando</button>
+   <a id="link-meu-aprendizado" href="#">Ir para Meu Aprendizado</a>
+  </span>
+  <div id="image-obrigado">
+   <img src="images/checkout/obrigado-pela-compra.svg" alt="Obrigado! Sua compra foi bem sucedida.">
+  </div>
+ </main>
+</body>
+
+<footer>
+ <%-include("partials/footer") %>
+</footer>
+</html>
