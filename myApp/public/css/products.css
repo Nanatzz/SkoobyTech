@@ -122,13 +122,14 @@ header #logo-header{
 }
 
 .categoria{
+    width: 100%;
     margin: 0px 0px 40px 0px;
 }
 
 
 .titulo-categorias{
     color: #0071FF;
-    margin: 10px 10px 20px 40px;
+    margin: 10px 10px 20px 80px;
     text-decoration: underline;
 }
 
@@ -150,17 +151,34 @@ header #logo-header{
 
 .listagem-cursos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.imagem-descritiva-curso{
+    width: 210px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.imagem-descritiva-curso img{
+    width: 100%;
+    height: 140px;
 }
 
 .curso-detalhes{
-    margin: 5px 10px 5px 0px;
-    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: 270px;
+    margin: 30px 40px;
 }
 
 .descricao-curso{
     margin: 5px 0px;
+    width: 100%;
     color: #fff;
 }
 
@@ -214,6 +232,7 @@ header #logo-header{
     background-color: #1C2124;
     color: #0071FF;
     text-decoration: underline;
+    margin-top: 30px;
 }
 
 #parceiros {
@@ -338,8 +357,3 @@ header #logo-header{
     width: 30px;
     height: 30px;
 }
-
-
-
-
-
