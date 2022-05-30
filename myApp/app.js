@@ -6,7 +6,7 @@ var logger = require('morgan');
 const productsRouter = require('./src/routes/productsRouter')
 const homeRouter = require('./src/routes/homeRouter')
 const internalProductRouter = require("./src/routes/internalProductRouter")
-const profileUserRouter = require("./src/routes/profileUserRouter")
+const profileUserRouter = require("./src/routes/profileuserRouter")
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
@@ -30,6 +30,10 @@ app.get('/finalizacao', function (req,res) {
 
 app.get('/curso', function (req,res) {
   res.render('internalProduct')
+})
+
+app.get('/profileuser', function (req,res) {
+  res.render('profileUser')
 })
 
 app.set('view engine', 'ejs');
