@@ -7,11 +7,37 @@
 </head>
 <body>
  <header>
-  <%-include("partials/header") %>
+  <nav id= "menu-entradas">
+   <a href= "/home"><img id="logo-header" src="images/home/logoheader.svg" alt="Logo SkoobyTech - Escola de Tecnologia"></a>
+   <a class="topico-header" href= "/home"><h2 class="nav-header">HOME</h2></a>
+   <a class="topico-header" href= "/products"><h2 class="nav-header">CATEGORIAS</h2></a>
+   <a class="topico-header" href= "#"><h2 class="nav-header">ENSINE NA SKOOBY</h2></a>
+ </nav>
+     
+ <span id="opcoes-user-header">
+   <a href="/cadastro"><p>Novo na Skooby?</p></a>
+   <a href="/cadastro"><button id="botao-cadastro">CADASTRE-SE</button></a>
+
+ </span>     
  </header>
+ <div id="botao-acessibilidade">
+  <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
+ </div>
  
 </body>
 <footer>
- <%-include("partials/footer") %>
+ <span id="rodape-footer">
+  <div id="marca-skooby-footer">
+   <p id="marca-skooby">© SkoobyTech 2022</p>
+  </div>
+
+  <nav id="redes-sociais">
+   <img class="icones-redes-sociais" src="images/home/linkedin.svg" alt="Ícone LinkedIn">
+   <img class="icones-redes-sociais" src="images/home/facebook.svg" alt="Ícone Facebook">
+   <img class="icones-redes-sociais" src="images/home/instagram.svg" alt="Ícone Instagram">
+   <img class="icones-redes-sociais" src="images/home/twitter.svg" alt="Ícone Twitter">
+   <img class="icones-redes-sociais" src="images/home/youtube.svg" alt="Ícone Youtube">
+  </nav>
+ </span>
 </footer>
 </html>
