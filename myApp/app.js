@@ -3,12 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const productsRouter = require('./src/routes/productsRouter')
-const homeRouter = require('./src/routes/homeRouter')
-const internalProductRouter = require('./src/routes/internalProductRouter')
-const profileUserRouter = require('./src/routes/profileuserRouter')
-const checkoutRouter = require('./src/routes/checkoutRouter')
-const loginRouter = require('./src/routes/loginRouter')
+const productsRouter = require('./src/routes/productsRouter');
+const homeRouter = require('./src/routes/homeRouter');
+const internalProductRouter = require('./src/routes/internalProductRouter');
+const profileUserRouter = require('./src/routes/profileuserRouter');
+const checkoutRouter = require('./src/routes/checkoutRouter');
+const loginRouter = require('./src/routes/loginRouter');
+const cadastroRouter = require('./src/routes/cadastroRouter');
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
@@ -42,6 +43,10 @@ app.get('/login', function (req,res) {
   res.render('login')
 })
 
+app.get('/cadastro', function (req,res) {
+  res.render('cadastro')
+})
+
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -58,6 +63,7 @@ app.get('/course', internalProductRouter);
 app.get('/profileUser', profileUserRouter);
 app.get('/checkout', checkoutRouter);
 app.get('/login', loginRouter);
+app.get('/cadastro', cadastroRouter)
 
 app.get('/', (req,res) => res.render('/products'))
 
