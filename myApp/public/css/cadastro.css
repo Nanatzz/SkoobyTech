@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ list-style-type: none;
+ text-decoration: none;
+}
+
+header {
+ width: 100%;
+ height: 82px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0px 0px 4px #121212;
+ background-color: #1C2124;
+ position: relative;
+ z-index: 16;
+}
+
+#menu-entradas{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ align-items: center;
+}
+
+header nav .nav-header{
+ font-size: 15px;
+}
+
+.topico-header{
+ color: #fff;
+ text-decoration: none;
+}
+
+header #logo-header{
+ margin-bottom: 10px;
+}
+
+#opcoes-user-header{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: 0px 30px;
+}
+
+#opcoes-user-header, a{
+ color: #fff;
+ font-weight: 300;
+ margin: 0px 20px;
+}
+
+#botao-entrar {
+ width: 125px;
+ height: 35px;
+ margin-bottom: 3px;
+ border-radius: 5px;
+ border: none;
+ background-color: #fff;
+ color: #263238D9;
+ font-weight: 800;
+ cursor: pointer;
+ font-size: 17px;
+}
+
+#botao-acessibilidade{
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-start;
+ cursor: pointer;
+ padding-top: 20px;
+ background-color: #1C2124;
+}
+
+#main-cadastro{
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ height: 100vh;
+ background-color: #1C2124;
+}
+
+#cadastro-banner{
+ display: flex;
+ flex-direction: column;
+ height: 97vh;
+ justify-content: space-between;
+}
+
+#cadastro-banner, h1{
+ color: #fff;
+ font-size: 40px;
+ margin: 20px 0px 50px;
+}
+
+#cadastro-user{
+ background-color: #373B3E;
+ height: 500px;
+ width: 500px;
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+form input{
+ background-color: #1C2124;
+ width: 420px;
+ height: 50px;
+ border-radius: 5px;
+ border: none;
+ padding: 10px;
+ margin: 20px 0px 5px;
+ font-size: 17px;
+ color: #fff;
+}
+
+form button {
+ background-color: #0098A1;
+ width: 350px;
+ height: 60px;
+ border-radius: 5px;
+ border: none;
+ color: #fff;
+ font-size: 23px;
+ font-weight: 500;
+ margin: 20px 0px 0px 35px;
+ cursor: pointer;
+}
+
+form label{
+ color: #fff;
+ display: flex;
+ flex-direction: row;
+}
+
+#cadastro-user input[type="checkbox"]{
+ height: 20px;
+ width: 20px;
+ display: flex;
+ flex-direction: row;
+}
+
+#rodape-footer{
+ display: flex;
+ justify-content: space-between;
+ background-color: #0F1113;
+ padding-top: 15px;
+}
+
+#marca-skooby{
+ color: #C0C0C0;
+ margin: 0px 40px 30px
+}
+
+#redes-sociais{
+ margin-right: 50px;
+ transition: all 0.5s;
+}
+
+.icones-redes-sociais{
+ margin: 10px 15px 30px;
+ cursor: pointer;
+}
+
+.icones-redes-sociais:hover{
+ width: 30px;
+ height: 30px;
+}

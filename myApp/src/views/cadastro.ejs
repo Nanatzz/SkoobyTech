@@ -3,7 +3,7 @@
 <head>
  <%-include("partials/head") %>
  <link rel="stylesheet" href="css/cadastro.css">
- <title>Realiza seu cadastro! | SkoobyTech - Escola de Tecnologia</title>
+ <title>Realize seu cadastro! | SkoobyTech - Escola de Tecnologia</title>
 </head>
 <body>
  <header>
@@ -15,14 +15,58 @@
  </nav>
      
  <span id="opcoes-user-header">
-   <a href="/cadastro"><p>Novo na Skooby?</p></a>
-   <a href="/cadastro"><button id="botao-cadastro">CADASTRE-SE</button></a>
+   <a href="/login"><p>Já tem uma conta?</p></a>
+   <a href="/login"><button id="botao-entrar">ENTRAR</button></a>
 
  </span>     
  </header>
  <div id="botao-acessibilidade">
   <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
  </div>
+
+ <span id="main-cadastro">
+  <div id="cadastro-banner">
+   <h1>Crie sua conta na Skooby</h1>
+   <img src="images/cadastro/freepick-cadastro.svg">
+  </div>
+
+  <span id="cadastro-user">
+   <form action="/home" method="post">
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Nome completo" required>
+    <br>
+    <label for="e-mail"></label>
+    <input type="email" id="e-mail" name="e-mail" placeholder="Endereço de e-mail" required>
+    <br>
+    <label for="senha"></label>
+    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+    <br>
+    <label for="confirmação"></label>
+    <input type="password" id="confirmação" name="confirmação" placeholder="Confirme sua senha" required>
+    <br>
+    <input type="checkbox" name="termos" required>
+    <label for="termos">Li e concordo com os <strong> Termos de Uso.</strong></label>
+    <br>
+    <button>CADASTRAR</button>
+   </form>
+  </span>
+
+ </span>
  
 </body>
+<footer>
+ <span id="rodape-footer">
+  <div id="marca-skooby-footer">
+   <p id="marca-skooby">© SkoobyTech 2022</p>
+  </div>
+
+  <nav id="redes-sociais">
+   <img class="icones-redes-sociais" src="images/home/linkedin.svg" alt="Ícone LinkedIn">
+   <img class="icones-redes-sociais" src="images/home/facebook.svg" alt="Ícone Facebook">
+   <img class="icones-redes-sociais" src="images/home/instagram.svg" alt="Ícone Instagram">
+   <img class="icones-redes-sociais" src="images/home/twitter.svg" alt="Ícone Twitter">
+   <img class="icones-redes-sociais" src="images/home/youtube.svg" alt="Ícone Youtube">
+  </nav>
+ </span>
+</footer>
 </html>
