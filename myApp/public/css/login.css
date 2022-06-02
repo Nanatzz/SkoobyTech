@@ -26,10 +26,12 @@ header {
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
@@ -56,12 +58,13 @@ header #logo-header{
 #opcoes-user-header, a{
  color: #fff;
  font-weight: 300;
- margin: 0px 20px;
+ margin: 0px 15px;
+ font-size: 18px;
 }
 
 #botao-cadastro {
- width: 125px;
- height: 37px;
+ width: 150px;
+ height: 45px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -69,7 +72,7 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 15px;
+ font-size: 18px;
  transition: all 0.7s;
 }
 
@@ -143,12 +146,11 @@ form{
 form input{
  background-color: #1C2124;
  width: 500px;
- height: 60px;
+ height: 65px;
  border-radius: 5px;
  border: 1px solid #1C2124;
- padding: 10px;
- margin: 15px 0px 5px;
- font-size: 18px;
+ padding: 10px 10px 10px 50px;
+ font-size: 20px;
  color: #fff;
  transition: border 0s;
 }
@@ -161,6 +163,33 @@ input:focus{
  outline: solid 2px #0098A1;
 }
 
+.icone-email {
+ position: relative;
+ right: 223px;
+ top: 45px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-senha {
+ position: relative;
+ right: 220px;
+ top: 43px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-vision {
+ position: relative;
+ left: 220px;
+ bottom: 45px;
+ font-size: 20px;
+ color: #0098A1;
+ background: none;
+ border: none;
+ cursor: pointer;
+}
+
 #esqueceu-senha{
  text-decoration: underline;
  font-weight: 500;
@@ -169,9 +198,11 @@ input:focus{
  justify-content: flex-end;
  margin-bottom: 20px;
  padding-left: 330px;
+ position: absolute;
+ top: 400px;
 }
 
-form button {
+#botao-entrar {
  background-color: #0098A1;
  width: 360px;
  height: 60px;
@@ -184,7 +215,7 @@ form button {
  transition: background-color 0.5s;
 }
 
-form button:hover{
+#botao-entrar:hover{
  background-color: #fff;
  color: #0098A1;
  font-weight: 800;

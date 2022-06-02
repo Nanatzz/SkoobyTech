@@ -26,10 +26,12 @@ header {
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
@@ -56,12 +58,13 @@ header #logo-header{
 #opcoes-user-header, a{
  color: #fff;
  font-weight: 300;
- margin: 0px 20px;
+ margin: 0px 15px;
+ font-size: 18px;
 }
 
-#botao-entrar {
- width: 125px;
- height: 37px;
+#botao-entrar{
+ width: 150px;
+ height: 45px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -69,7 +72,7 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 17px;
+ font-size: 21px;
  transition: all 0.7s;
 }
 
@@ -128,20 +131,25 @@ header #logo-header{
  border-radius: 5px;
  display: flex;
  flex-direction: column;
- justify-content: space-evenly;
  align-items: center;
+ justify-content: space-evenly;
 }
 
+form{
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+}
 
 form input{
  background-color: #1C2124;
- width: 500px;
+ width: 510px;
  height: 60px;
  border-radius: 5px;
  border: none;
- padding: 10px;
- margin: 15px 0px 5px;
- font-size: 18px;
+ padding: 10px 10px 10px 50px;
+ margin: 5px;
+ font-size: 20px;
  color: #fff;
  transition: border 0s;
 }
@@ -152,6 +160,42 @@ input:hover{
 
 input:focus{
  outline: solid 2px #0098A1;
+}
+
+.icone-user{
+ position: relative;
+ top: 45px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1;
+ border: none;
+ cursor: pointer;
+}
+
+.icone-email {
+ position: relative;
+ top: 46px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-senha {
+ position: relative;
+ top: 46px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-senha-confirmacao {
+ position: relative;
+ top: 46px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1;
+ border: none;
+ cursor: pointer;
 }
 
 form label{
