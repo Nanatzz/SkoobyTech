@@ -87,7 +87,7 @@ header #logo-header{
 #login-banner{
  display: flex;
  flex-direction: column;
-
+ justify-content: space-between;
 }
 
 #login-banner, h1{
@@ -105,7 +105,7 @@ header #logo-header{
  height: 500px;
  border-radius: 5px;
  border: none;
- display:flex;
+ display: flex;
  flex-direction: column;
  justify-content: space-evenly;
  align-items: center;
