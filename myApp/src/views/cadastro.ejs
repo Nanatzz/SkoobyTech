@@ -26,8 +26,8 @@
 
  <span id="main-cadastro">
   <div id="cadastro-banner">
-   <h1>Crie sua conta na Skooby</h1>
-   <img src="images/cadastro/freepick-cadastro.svg">
+   <h1 id="titulo-banner">Crie sua conta na<a id="titulo-skooby">SkoobyTech</a></h1>
+   <img id="image-banner" src="images/cadastro/freepick-cadastro.svg">
   </div>
 
   <span id="cadastro-user">
@@ -44,8 +44,10 @@
     <label for="confirmação"></label>
     <input type="password" id="confirmação" name="confirmação" placeholder="Confirme sua senha" required>
     <br>
-    <input type="checkbox" name="termos" required>
-    <label for="termos">Li e concordo com os <strong> Termos de Uso.</strong></label>
+    <div id="container-checkbox">
+      <input type="checkbox" name="termos" required>
+      <label for="termos">Li e concordo com os <a>Termos de Uso.</a></label>
+    </div>
     <br>
     <button>CADASTRAR</button>
    </form>
