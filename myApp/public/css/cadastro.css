@@ -163,8 +163,8 @@ input:focus{
 }
 
 .icone-user{
- position: relative;
- top: 45px;
+ position: absolute;
+ top: 20px;
  left: 17px;
  font-size: 20px;
  color: #0098A1;
@@ -173,24 +173,24 @@ input:focus{
 }
 
 .icone-email {
- position: relative;
- top: 46px;
+ position: absolute;
+ top: 109px;
  left: 17px;
  font-size: 20px;
  color: #0098A1
 }
 
 .icone-senha {
- position: relative;
- top: 46px;
+ position: absolute;
+ top: 197px;
  left: 17px;
  font-size: 20px;
  color: #0098A1
 }
 
 .icone-senha-confirmacao {
- position: relative;
- top: 46px;
+ position: absolute;
+ top: 285px;
  left: 17px;
  font-size: 20px;
  color: #0098A1;
@@ -201,7 +201,7 @@ input:focus{
 form label{
  color: #fff;
  font-size: 18px;
- margin: 10px 0px 0px 5px
+ margin: 2px 0px 0px 5px
 }
 
 form #container-checkbox{
@@ -231,7 +231,7 @@ form button {
  font-weight: 500;
  margin: 20px 0px 0px 80px;
  cursor: pointer;
- transition: background-color 0.5s;
+ transition: all 0.5s;
 }
 
 form button:hover{
@@ -239,7 +239,6 @@ form button:hover{
  color: #0098A1;
  font-weight: 800;
 }
-
 
 #faixa-footer{
  border-top: 1px #C0C0C0 solid;
