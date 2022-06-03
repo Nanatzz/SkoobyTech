@@ -26,11 +26,13 @@ header #menu-entradas{
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
  margin: 0px 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
@@ -52,8 +54,8 @@ header #logo-header{
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
- width: 500px;
- height: 37px;
+ width: 520px;
+ height: 43px;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -63,7 +65,7 @@ header #logo-header{
 
 #campo-pesquisa{
  color: #C0C0C0;
- font-size : 15px;
+ font-size: 19px;
  background-color: #373B3E;
  align-items: center;
  margin-left: 12px;
@@ -92,24 +94,6 @@ header #logo-header{
  margin-top: 2px;
 }
 
-#link-entrar{
- color: #fff;
- font-weight: 700;
- margin: 0px 20px;
-}
-
-#botao-cadastro {
- width: 125px;
- height: 35px;
- margin-bottom: 3px;
- border-radius: 5px;
- border: none;
- background-color: #fff;
- color: #263238D9;
- font-weight: 800;
- cursor: pointer;
- font-size: 14px;
-}
 
 #botao-acessibilidade{
  display: flex;

@@ -26,11 +26,13 @@ header #menu-entradas{
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
  margin: 0px 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
@@ -52,8 +54,8 @@ header #logo-header{
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
- width: 500px;
- height: 37px;
+ width: 520px;
+ height: 43px;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -95,12 +97,13 @@ header #logo-header{
 #link-entrar{
  color: #fff;
  font-weight: 700;
- margin: 0px 20px;
+ margin: 0px 25px;
+ font-size: 20px;
 }
 
 #botao-cadastro {
- width: 125px;
- height: 37px;
+ width: 150px;
+ height: 45px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -108,7 +111,7 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 15px;
+ font-size: 18px;
  transition: all 0.7s;
 }
 
