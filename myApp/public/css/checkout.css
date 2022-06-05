@@ -84,16 +84,11 @@ header #logo-header{
 
 #opcoes-user-header{
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: center;
  margin: 0px 30px;
+ width: 20vh;
 }
-
-#icone-carrinho{
- cursor: pointer;
- margin-top: 2px;
-}
-
 
 #botao-acessibilidade{
  display: flex;
@@ -163,6 +158,14 @@ body{
  font-weight: 700;
  border-radius: 5px;
  margin: 50px 40px 0px 0px;
+ transition: all 0.5s;
+}
+
+#botoes-user button:hover{
+ background-color: #fff;
+ color: #01B671;
+ font-weight: 800;
+ font-size: 21px;
 }
 
 #link-meu-aprendizado{
