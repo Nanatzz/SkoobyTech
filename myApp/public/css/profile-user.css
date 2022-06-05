@@ -245,7 +245,7 @@ header #logo-header{
 }
 #scheduletime{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 15px;
     height: 240px;
     margin: 15px;
@@ -257,21 +257,35 @@ header #logo-header{
 #scheduletime h1 {
     color: white;
     font-size: 31px;
-    width: 635px;
+    width: 685px;
     height: 35px;
 }
 #scheduletime h2 {
     color: white;
     font-size: 18px;
-    width: 850px;
+    width: 760px;
     height: 100px;
 }
 #scheduletimebutton{
-    width: 130px;
+    width: 100px;
     height: 30px;
+    text-align: center;
     color: #1C2022;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #FFC727;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none; 
+}
+
+#scheduletimebutton2{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    color: #1C2022;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #A6A6A6;
     font-size: 20px;
     border-radius: 5px;
     border: none; 
