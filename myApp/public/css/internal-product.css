@@ -26,23 +26,16 @@ header #menu-entradas{
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
- margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 20px;
+ font-size: 15px;
  margin: 0px 20px;
- padding-left: 20px;
 }
 
 .topico-header{
  color: #fff;
  text-decoration: none;
- transition: color 0.3s;
-}
-
-.topico-header:hover {
- color: #01B671;
 }
 
 header #logo-header{
@@ -54,32 +47,25 @@ header #logo-header{
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
- width: 520px;
- height: 43px;
+ width: 500px;
+ height: 37px;
  display: flex;
  justify-content: space-between;
  align-items: center;
  margin: 0px 10px;
- padding: 0px 5px;
 }
 
 #campo-pesquisa{
- color: #C0C0C0;
+ color: #BABABA;
  font-size : 15px;
  background-color: #373B3E;
  align-items: center;
  margin-left: 12px;
- border: none;
- outline: none;
- width: 100%;
- height: 30px;
 }
 
-#botao-pesquisar {
- background-color: #373B3E;
- border: none;
- cursor: pointer;
- margin: 4px 9px 0px 0px;
+#icone-campo-pesquisa{
+ background-color:#373B3E;
+ margin-right: 12px;
 }
 
 #opcoes-user-header{
@@ -97,13 +83,12 @@ header #logo-header{
 #link-entrar{
  color: #fff;
  font-weight: 700;
- margin: 0px 25px;
- font-size: 20px;
+ margin: 0px 20px;
 }
 
 #botao-cadastro {
- width: 150px;
- height: 45px;
+ width: 125px;
+ height: 35px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -111,13 +96,7 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 18px;
- transition: all 0.7s;
-}
-
-#botao-cadastro:hover{
- background-color: #01B671;
- color: #fff;
+ font-size: 14px;
 }
 
 #botao-acessibilidade{
@@ -128,6 +107,7 @@ header #logo-header{
  padding-top: 20px;
  background-color: #1C2124;
 }
+
 
 #container-footer {
  width: 100%;
@@ -141,9 +121,7 @@ header #logo-header{
 
 #logo-footer{
  margin: 30px;
- padding-bottom: 20px;
- width: 260px;
- height: 260px;
+ padding-bottom: 10px;
 }
 
 #area-navegacao-footer{
@@ -159,16 +137,14 @@ header #logo-header{
  margin: 10px;
  list-style: none;
  text-decoration: none;
- font-size: 23px;
 }
 
 .topico-nav{
  color: #C0C0C0;
  list-style: none;
  text-decoration: none;
+ font-size: 14px;
  font-weight: 100;
- font-size: 19px;
- margin: 7px 0px
 }
 
 
@@ -177,14 +153,10 @@ header #logo-header{
  margin-right: 50px;
 }
 
-#newsletter-footer, h2{
- font-size: 27px;
-}
-
 #newsletter-detalhes{
  margin: 7px 0px 15px 0px;
- font-size: 18px;
- font-weight: 300;
+ font-size: 14px;
+ font-weight: 100;
 }
 
 #campo-newsletter{
@@ -192,27 +164,24 @@ header #logo-header{
 }
 
 #email-newsletter{
- width: 240px;
- height: 37px;
+ width: 190px;
+ height: 31px;
  background-color: #fff;
  border-radius: 5px;
  color: #263238D9;
- display: flex;
- align-items: center;
- padding-left: 10px;
- font-size: 15px;
+ padding: 8px 0px 1px 7px;
+ font-size: 13px;
 }
 
 #botao-newsletter{
  margin-left: 10px;
- width: 155px;
- height: 37px;
+ width: 130px;
+ height: 31px;
  border-radius: 5px;
- box-shadow: 3px 3px 3px #000;
  border: none;
  background-color: #000;
+ box-shadow: 3px 3px 3px #000;
  color: #fff;
- font-size: 19px;
  font-weight: 900;
  cursor: pointer;
 }
@@ -232,7 +201,7 @@ header #logo-header{
 
 #marca-skooby{
  color: #C0C0C0;
- margin: 0px 40px 30px
+ margin: 0px 40px 30px;
 }
 
 #redes-sociais{
@@ -241,13 +210,7 @@ header #logo-header{
 
 .icones-redes-sociais{
  margin: 10px 15px 30px;
-}
-
-.icones-redes-sociais, img{
- width: 35px;
- height: 35px;
  cursor: pointer;
- transition: all 0.5s;
 }
 
 .icones-redes-sociais:hover{

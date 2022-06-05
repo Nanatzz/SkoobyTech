@@ -26,22 +26,15 @@ header {
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
- margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 20px;
- padding-left: 20px;
+ font-size: 15px;
 }
 
 .topico-header{
  color: #fff;
  text-decoration: none;
- transition: color 0.3s;
-}
-
-.topico-header:hover {
- color: #01B671;
 }
 
 header #logo-header{
@@ -58,13 +51,12 @@ header #logo-header{
 #opcoes-user-header, a{
  color: #fff;
  font-weight: 300;
- margin: 0px 15px;
- font-size: 18px;
+ margin: 0px 20px;
 }
 
 #botao-cadastro {
- width: 150px;
- height: 45px;
+ width: 125px;
+ height: 35px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -72,13 +64,7 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 18px;
- transition: all 0.7s;
-}
-
-#botao-cadastro:hover{
- background-color: #01B671;
- color: #fff;
+ font-size: 14px;
 }
 
 #botao-acessibilidade{
@@ -104,31 +90,19 @@ header #logo-header{
  justify-content: space-between;
 }
 
-#titulo-banner{
+#login-banner, h1{
  color: #fff;
- font-size: 50px;
+ font-size: 40px;
  margin: 20px 0px 50px;
  display: flex;
  align-items: flex-end;
- justify-content: flex-start;
 }
 
-#titulo-skooby{
- color: #0098A1;
- font-size: 50px;
- font-weight: 800;
-}
-
-#image-banner{
- position: relative;
- z-index: 15;
- top: 80px;
-}
 
 #login-user{
  background-color: #373B3E;
- width: 600px;
- height: 600px;
+ width: 500px;
+ height: 500px;
  border-radius: 5px;
  border: none;
  display: flex;
@@ -137,104 +111,52 @@ header #logo-header{
  align-items: center;
 }
 
-form{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
 form input{
  background-color: #1C2124;
- width: 500px;
- height: 65px;
+ width: 420px;
+ height: 50px;
  border-radius: 5px;
- border: 1px solid #1C2124;
- padding: 10px 10px 10px 50px;
- font-size: 20px;
- color: #fff;
- transition: border 0s;
-}
-
-input:hover{
- border: solid 3px #0098A1;
-}
-
-input:focus{
- outline: solid 2px #0098A1;
-}
-
-.icone-email {
- position: relative;
- right: 223px;
- top: 45px;
- font-size: 20px;
- color: #0098A1
-}
-
-.icone-senha {
- position: relative;
- right: 220px;
- top: 43px;
- font-size: 20px;
- color: #0098A1
-}
-
-.icone-vision {
- position: relative;
- left: 220px;
- bottom: 45px;
- font-size: 20px;
- color: #0098A1;
- background: none;
  border: none;
- cursor: pointer;
+ padding: 10px;
+ margin: 20px 0px 5px;
+ font-size: 17px;
+ color: #fff;
 }
 
 #esqueceu-senha{
  text-decoration: underline;
  font-weight: 500;
- font-size: 16px;
+ font-size: 14px;
  display: flex;
  justify-content: flex-end;
- margin-bottom: 20px;
- padding-left: 330px;
- position: absolute;
- top: 400px;
+ margin-top: 5px;
 }
 
-#botao-entrar {
+form button {
  background-color: #0098A1;
- width: 360px;
+ width: 350px;
  height: 60px;
  border-radius: 5px;
  border: none;
  color: #fff;
  font-size: 23px;
  font-weight: 500;
+ margin: 20px 0px 0px 35px;
  cursor: pointer;
- transition: all 0.5s;
-}
-
-#botao-entrar:hover{
- background-color: #fff;
- color: #0098A1;
- font-weight: 800;
- font-size: 24px;
 }
 
 #login-user p{
  color: #fff;
- font-size: 17px;
 }
 
 #cadastro{
  color: #0098A1;
- font-weight: 800;
- font-size: 19px;
+ font-weight: 500;
+ font-size: 17px;
 }
 
 #rodape-login{
- width: 373px;
+ width: 371px;
  border-top: 1px #C0C0C0 solid;
  display: flex;
  padding-top: 20px;
@@ -254,12 +176,6 @@ input:focus{
  cursor: pointer;
 }
 
-#faixa-footer{
- border-top: 1px #C0C0C0 solid;
- width: 2px;
- height: 1px;
-}
-
 #rodape-footer{
  display: flex;
  justify-content: space-between;
@@ -274,17 +190,12 @@ input:focus{
 
 #redes-sociais{
  margin-right: 50px;
+ transition: all 0.5s;
 }
 
 .icones-redes-sociais{
  margin: 10px 15px 30px;
-}
-
-.icones-redes-sociais{
- width: 35px;
- height: 35px;
  cursor: pointer;
- transition: all 0.5s;
 }
 
 .icones-redes-sociais:hover{
