@@ -333,7 +333,7 @@ header #logo-header{
 }
 
 #email-newsletter{
- width: 240px;
+ width: 270px;
  height: 37px;
  background-color: #fff;
  border-radius: 5px;
@@ -341,11 +341,15 @@ header #logo-header{
  display: flex;
  align-items: center;
  padding-left: 10px;
- font-size: 15px;
+ font-size: 16px;
+}
+
+#email-newsletter:focus{
+ outline: none;
 }
 
 #botao-newsletter{
- margin-left: 10px;
+ margin-left: 20px;
  width: 155px;
  height: 37px;
  border-radius: 5px;

@@ -246,7 +246,7 @@ body{
 }
 
 #email-newsletter{
- width: 240px;
+ width: 270px;
  height: 37px;
  background-color: #fff;
  border-radius: 5px;
@@ -254,7 +254,11 @@ body{
  display: flex;
  align-items: center;
  padding-left: 10px;
- font-size: 15px;
+ font-size: 16px;
+}
+
+#email-newsletter:focus{
+ outline: none;
 }
 
 #botao-newsletter{

@@ -234,7 +234,7 @@ input:focus{
 }
 
 #rodape-login{
- width: 373px;
+ width: 430px;
  border-top: 1px #C0C0C0 solid;
  display: flex;
  padding-top: 20px;
@@ -242,9 +242,13 @@ input:focus{
  justify-content: space-around;
 }
 
+#rodape-login p{
+ font-size: 19px;
+}
+
 .alternativas-login{
- width: 122px;
- height: 45px;
+ width: 130px;
+ height: 50px;
  border-radius: 5px;
  border: none;
  background-color: #1C2124;
@@ -252,6 +256,7 @@ input:focus{
  align-items: center;
  justify-content: space-evenly;
  cursor: pointer;
+ margin: 0px 7px;
 }
 
 #faixa-footer{
