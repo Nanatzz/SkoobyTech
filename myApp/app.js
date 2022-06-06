@@ -13,7 +13,7 @@ const cadastroRouter = require('./src/routes/cadastroRouter');
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
 
 var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users');
+var usersRouter = require('./src/routes/users'); 
 
 var app = express();
 
