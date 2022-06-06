@@ -10,9 +10,10 @@ const profileUserRouter = require('./src/routes/profileuserRouter');
 const checkoutRouter = require('./src/routes/checkoutRouter');
 const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
+const carrinhoRouter = require('./src/routes/carrinhoRouter');
 
 var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users');
+var usersRouter = require('./src/routes/users'); 
 
 var app = express();
 
@@ -47,6 +48,10 @@ app.get('/cadastro', function (req,res) {
   res.render('cadastro')
 })
 
+app.get('/carrinho', function (req,res) {
+  res.render('carrinho')
+})
+
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -63,7 +68,8 @@ app.get('/course', internalProductRouter);
 app.get('/profileUser', profileUserRouter);
 app.get('/checkout', checkoutRouter);
 app.get('/login', loginRouter);
-app.get('/cadastro', cadastroRouter)
+app.get('/cadastro', cadastroRouter);
+app.get('/carrinho', carrinhoRouter);
 
 app.get('/', (req,res) => res.render('/products'))
 
