@@ -9,54 +9,58 @@
     <header>
         <%-include("partials/header") %>
     </header>
+    <div id="botao-acessibilidade">
+        <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
+    </div>
     <main>
-        <div id="botao-acessibilidade">
-            <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
-        </div>
-        <span id="container-apresentacao-curso">
+        <span id="container-curso">
             <div id="preview-curso">
                 <div id="video-curso">
-                    <img src="images/internalProduct/load-video-preview.svg" alt="teste">
-                    <p>Pré-visualização do curso</p>
+                    <img id="img-video-curso" src="images/internalProduct/load-video-preview.svg" alt="teste">
+                    <p id="txt-video-curso">Pré-visualização do curso</p>
                 </div>
                 
                 <div id="valores-curso">
                     <div id="preco">
-                        <p class="preco-detalhes">De R$99,99</p>
-                        <p><strong>R$ 00,00</strong></p>
-                        <p class="preco-detalhes">Ganhe 100% de desconto</p>
-                    </div>
-                    <div id="promocao">
-                        <img src="images/internalProduct/promocao-image.svg">
-                        <p>Promoção acaba em 00:00 horas</p>
+                        <div id="preco-detalhes">
+                            <p class="desconto">De R$99,99</p>
+                            <p id="preco-curso"><strong>R$ 00,00</strong></p>
+                            <p class="desconto">Ganhe 100% de desconto</p>
+                        </div>
+                        <div id="promocao">
+                            <img id="img-promocao" src="images/internalProduct/promocao-image.svg">
+                            <p id="txt-promocao">Promoção acaba em 00:00 horas</p>
+                        </div>
                     </div>
                 </div>
 
                 <div id="botoes-user">
                     <form action="/user" method="get">
-                        <button id="botao-carrinho" href="#">Adicionar ao carrinho <img src="images/products/carrinho-products.svg"></button>
+                        <button id="botao-carrinho" href="#"><img src="images/products/carrinho-products.svg"></button>
                         <button id="botao-favoritos" href="#"><img src="images/products/icone-favoritar.svg"></button>
                         <button id="botao-comprar" href="#"><strong>COMPRAR AGORA</strong></button>
                     </form>
                     <a id="devolucao" href="/perguntas-frequentes">Garantia de devolução do dinheiro em 30 dias</a>
                 </div>
 
+                <p id="titulo-detalhes-curso"><strong>Detalhes do curso</strong></p>
                 <span id="detalhes-curso">
-                    <p id="titulo-detalhes-curso"><strong>Detalhes do curso</strong></p>
-                    <div id="informacoes-detalhes-curso">
-                        <img src="images/internalProduct/image-video-aula.svg" alt="">
-                        <p class="caracteristicas-curso">0 horas de vídeo aula</p>
-                        <img src="images/internalProduct/image-simulados.svg" alt="">
+                    <div id="img-detalhes-curso">
+                        <img class="icone-detalhes-curso" src="images/internalProduct/image-video-aula.svg" alt="">
+                        <img class="icone-detalhes-curso" src="images/internalProduct/image-simulados.svg" alt="">
+                        <img class="icone-detalhes-curso" src="images/internalProduct/image-vitalidade.svg" alt="">
+                        <img class="icone-detalhes-curso" src="images/internalProduct/image-atividades.svg" alt="">
+                        <img class="icone-detalhes-curso" src="images/internalProduct/image-certificado.svg" alt="">
+                    </div>
+                    <div id="txt-detalhes-curso">
+                        <p class="caracteristicas-curso-primeiro">0 horas de vídeo aula</p>
                         <p class="caracteristicas-curso">0 simulados</p>
-                        <img src="images/internalProduct/image-vitalidade.svg" alt="">
                         <p class="caracteristicas-curso">Acesso total vitalício</p>
-                        <img src="images/internalProduct/image-atividades.svg" alt="">
                         <p class="caracteristicas-curso">000 atividades</p>
-                        <img src="images/internalProduct/image-certificado.svg" alt="">
                         <p class="caracteristicas-curso">Certificado de participação</p>
                     </div>
-                    <a href="#">Compartilhar este curso</a>
                 </span>
+                <a id="compartilhar-curso" href="#">Compartilhar este curso</a>
             </div>
         </span>
 
