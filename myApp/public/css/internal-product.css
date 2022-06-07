@@ -124,11 +124,17 @@ header #logo-header{
 
 #botao-acessibilidade{
  display: flex;
- justify-content: flex-end;
- align-items: flex-start;
  cursor: pointer;
  padding-top: 20px;
- background-color: #1C2124;
+ background-color: none;
+ transition: all 1s;
+ position: fixed;
+ right: 0px;
+ z-index: 16;
+}
+
+#botao-acessibilidade:hover{
+ width: 35px;
 }
 
 #container-footer {
