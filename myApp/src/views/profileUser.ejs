@@ -3,7 +3,7 @@
 <head>
     <%-include("partials/head") %>
     <link rel           = "stylesheet" href="css/profile-user.css">
-    <title>SkoobyTech</title>
+    <title>Meu Perfil</title>
 </head>
 </html>
 <body>
@@ -14,7 +14,7 @@
     <div id="botao-acessibilidade">
      <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
     </div>
-    <section id= "cimaprofileuser">
+    <section id= "upprofileuser">
       <img class ="artuser"src= "/images/profileuser/artuser.svg" alt="Art Profile User">
        <div id= "noticeprofileuser">
             <h1>Olá, Fulaninho da TI</h1>
@@ -25,41 +25,59 @@
       <box id = "containermyaccount"> 
         <section id="myaccount">
            <p><strong> Minha Conta</strong></p>
-           <a href="/configsaccount"><button id="configs-account"><strong>Configurações<strong></button></a>
-         <div class="myaccountgradient">          
+           <h1 href="/configsaccount"><button id="configs-account"><strong>Configurações<strong></button></h1>
+           <div class="myaccountgradient">  
             <span id="myaccountuserinfo">
-              <form>
-               <h1>Informações do Usuário</h1>
-                <label for="name">Nome de Usuário</label>
-                <br>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <label for="e-mail">E-mail</label>
-                <input type="email" id="e-mail" name="e-mail" placeholder="Endereço de e-mail" required>
-                <br>
-                <label for="name">Primeiro Nome</label>
-                <br>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <label for="name">Segundo Nome</label>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <br>
-                <label for="password">Senha atual (deixe em branco para não alterar)</label>
-                <br>
-                <input type="password" id="senha" name="senha" placeholder="Senha atual" required>
-                <br>
-                <label for="password">Nova senha (deixe em branco para não alterar)</label>
-                <br>
-                <input type="password" id="novasenha" name="senha" placeholder="Criar Nova  Senha" required>
-                <br>
-                <label for="confirmação">Confirmar nova senha</label>
-                <br>
-                <input type="password" id="confirmação" name="confirmação" placeholder="Confirmar nova senha" required>
-                <br>
-              </form>
+               <form>
+                  <h1>Informações do Usuário</h1>
+                  <br>
+                <section id = "info-userup">
+                  <div class = "div-infouser">
+                    <label for="name">Nome de Usuário</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="@Fulaninho" required>
+                    <br>
+                    <label for="name">Primeiro Nome</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Fulaninho" required>
+                    <br>
+                  </div>
+                  <div>
+                    <label for="e-mail">E-mail</label>
+                    <br>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="fulaninho@digitalhouse.com" required>
+                    <br>
+                    <label for="senha">Sobrenome</label>
+                    <br>
+                    <input type="name" id="name" name="name" placeholder="da TI" required>
+                     <br>
+                  </div>
+                    <br>
+                <section id = "info-userdown">
+                  <div>
+                    <label for="senha">Senha atual (deixe em branco para não alterar)</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="***********" required>
+                    <br>
+                    <label for="senha-atual">Nova senha (deixe em branco para não alterar)</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="Criar nova senha" required>
+                    <br>
+                    <label for="nova-senha">Confirmar nova senha</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="Confirmar nova senha" required>
+                    <br>
+                  </div>
+                    <input id="save-profile" type="submit" name="save-profile">
+                </section>    
+              </form>  
             </span>  
           </div>
+          <a class="user-since">Por aqui desde: 25/03/2022</a>
         </section>
+       
         <section id = "bioaccount"> 
-            <img href = "#"id="edit-account" src="public/images/profileuser/editIcon">
+            <img href = "#"id="edit-account" src="public/images/profileuser/editIcon.svg" alt="EditBio-Account"> 
         </section>
         <section>
           <div id="activityuser"></div>
@@ -76,6 +94,7 @@
           
           <section id ="mylearning">
             <div id="scheduletime">
+              <img class = "mylearningtarget" src= "/images/profileuser/alvo-meu-aprendizado.svg" alt="Target Image">
               <h1><strong>Programe um horário para o seu aprendizado</strong></h1>
               <h2>Alguns minutos de estudo por dia valem a pena. Pesquisas mostram que os alunos que fazem do estudo um hábito têm maior probabilidade de alcançar suas metas. Reserve um tempo para estudar e receba lembretes usando seu programador de aprendizado.</h2>
               <a href="#"><button id="scheduletimebutton"><strong>Começar<strong></button></a>
