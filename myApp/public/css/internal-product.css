@@ -127,7 +127,6 @@ header #logo-header{
  cursor: pointer;
  padding-top: 20px;
  background-color: none;
- transition: all 1s;
  position: fixed;
  right: 0px;
  z-index: 16;
@@ -136,6 +135,203 @@ header #logo-header{
 #botao-acessibilidade:hover{
  width: 35px;
 }
+
+main{
+ background-color: #1C2124;
+ padding-top: 90px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+#container-curso{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #171C1F;
+ height: 1080px;
+ width: 530px;
+ color: #FFF;
+ border-radius: 5px;
+ padding: 25px 0px;
+ margin: 0px 20px 40px 150px;
+}
+
+#preview-curso{
+ display: flex;
+ flex-direction: column;
+}
+
+#video-curso{
+ background-color: #373B3E;
+ height: 270px;
+ width: 480px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+#img-video-curso{
+ margin-top: 80px;
+ width: 110px;
+ height: 110px;
+}
+
+#txt-video-curso{
+ margin-bottom: 10px;
+ color: #C4C4C4;
+}
+
+#preco{
+ background-color: #373B3E;
+ height: 142px;
+ width: 480px;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+}
+
+#preco-detalhes{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding-left: 10px;
+}
+
+.desconto{
+ font-size: 17px;
+ color: #C4C4C4;
+}
+
+#preco-curso{
+ font-size: 37px;
+}
+
+#promocao{
+ /*/position: absolute;/*/
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+#img-promocao{
+ width: 130px;
+ height: 130px;
+}
+
+#txt-promocao{
+ z-index: 15;
+ flex-wrap: wrap;
+ width: 100px;
+}
+
+form{
+ margin: 20px 0px 10px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ width: 480px;
+}
+
+#botao-carrinho{
+ width: 60px;
+ height: 60px;
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+}
+
+#botao-carrinho:hover{
+ background-color: #373B3E;
+}
+
+#botao-favoritos{
+ width: 60px;
+ height: 60px;
+ border-radius: 5px;
+ border: none;
+ margin-left: 5px;
+ cursor: pointer;
+ padding-top: 2px;
+}
+
+#botao-favoritos:hover{
+ background-color: #373B3E;
+}
+
+#botao-comprar{
+ width: 340px;
+ height: 60px;
+ border-radius: 5px;
+ border: none;
+ background-color:darkorchid;
+ color:#fff;
+ font-size: 21px;
+ cursor: pointer;
+ transition: all 0.5s;
+ margin-left: 5px;
+}
+
+#botao-comprar:hover{
+ background-color: #fff;
+ color:darkorchid;
+ font-size: x-large;
+}
+
+#devolucao{
+ color: #C4C4C4;
+ margin-left: 75px;
+}
+
+#devolucao:hover{
+ color:#fff;
+}
+
+#detalhes-curso{
+ display: flex;
+ flex-wrap: nowrap;
+}
+
+#titulo-detalhes-curso{
+ font-size: 22px;
+ padding-bottom: 20px;
+ margin: 60px 0px 0px 5px;
+}
+
+#img-detalhes-curso{
+ display: flex;
+ flex-direction: column;
+}
+
+.icone-detalhes-curso{
+ margin: 10px 10px;
+}
+
+.caracteristicas-curso{
+ padding-top: 15px;
+ margin: 19px 30px;
+ font-size: 18px;
+}
+
+.caracteristicas-curso-primeiro{
+ margin: 15px 30px;
+ font-size: 18px;
+}
+
+#compartilhar-curso{
+ text-align: center;
+ margin-top: 50px;
+ font-size: 22px;
+ text-decoration: underline;
+ font-weight: 500;
+ color: darkorchid;
+}
+
+
+
+
 
 #container-footer {
  width: 100%;

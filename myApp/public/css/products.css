@@ -164,7 +164,7 @@ header #logo-header{
  height: 70px;
  border-radius: 3px;
  background-color: #010101;
- padding: 24px 7px;
+ padding: 24px 10px;
  cursor: pointer;
 }
 
@@ -276,16 +276,15 @@ header #logo-header{
 
 .link-ver-todos{
  display: flex;
- width: 100%;
  font-weight: 900;
- justify-content: flex-end;
  cursor: pointer;
- padding-right: 60px;
  background-color: #1C2124;
  color: #0071FF;
  text-decoration: underline;
- margin-top: 80px;
+ margin-top: 90px;
  font-size: 20px;
+ position: relative;
+ left: 90vw;
 }
 
 .link-ver-todos:hover{
