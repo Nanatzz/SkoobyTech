@@ -3,18 +3,32 @@
 <head>
     <%-include("partials/head") %>
     <link rel           = "stylesheet" href="css/profile-user.css">
-    <title>SkoobyTech</title>
+    <title>Meu Perfil</title>
 </head>
 </html>
 <body>
   <header>
-   <%-include("partials/header") %>
+    <nav id= "menu-entradas">
+      <a href= "/home"><img id="logo-header" src="images/products/logoheader.svg" alt="Logo SkoobyTech - Escola de Tecnologia"></a>
+      <a class="topico-header" href= "/home"><h2 class="nav-header">HOME</h2></a>
+      <a class="topico-header" href= "/products"><h2 class="nav-header">CATEGORIAS</h2></a>
+      <a class="topico-header" href= "#"><h2 class="nav-header">ENSINE NA SKOOBY</h2></a>
+    </nav>
+    <div id= "area-pesquisa">
+      <input type="text" id="campo-pesquisa" placeholder="O que você quer aprender?">
+      <button id="botao-pesquisar" type="submit"><img src="images/products/pesquisar.svg" alt="Ícone de lupa de pesquisa"></button>
+    </div>
+    <span id= "opcoes-user-header">
+      <button class="button-card-course"><img src="images/profileuser/carrinho.svg" alt="Botão Carrinho de compras"></button>
+      <button class="button-favorite-course"><img src="images/profileuser/icone-favoritar.svg" alt="Botão Favoritos"></button>
+      <button class="button-profile-ser"><img src="images/profileuser/userpicheader.svg" alt="ícone de Perfil do Usuário"></button>
+    </span>   
   </header>
    <main id          = "container-bodyprofileuser">
     <div id="botao-acessibilidade">
      <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
     </div>
-    <section id= "cimaprofileuser">
+    <section id= "upprofileuser">
       <img class ="artuser"src= "/images/profileuser/artuser.svg" alt="Art Profile User">
        <div id= "noticeprofileuser">
             <h1>Olá, Fulaninho da TI</h1>
@@ -25,74 +39,157 @@
       <box id = "containermyaccount"> 
         <section id="myaccount">
            <p><strong> Minha Conta</strong></p>
-           <a href="/configsaccount"><button id="configs-account"><strong>Configurações<strong></button></a>
-         <div class="myaccountgradient">          
+           <button class="configs-account" href="/configsaccount" ><strong>Configurações<strong></button>
+           <div class="myaccountgradient">  
             <span id="myaccountuserinfo">
-              <form>
-               <h1>Informações do Usuário</h1>
-                <label for="name">Nome de Usuário</label>
-                <br>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <label for="e-mail">E-mail</label>
-                <input type="email" id="e-mail" name="e-mail" placeholder="Endereço de e-mail" required>
-                <br>
-                <label for="name">Primeiro Nome</label>
-                <br>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <label for="name">Segundo Nome</label>
-                <input type="text" id="name" name="name" placeholder="@fulaninho" required>
-                <br>
-                <label for="password">Senha atual (deixe em branco para não alterar)</label>
-                <br>
-                <input type="password" id="senha" name="senha" placeholder="Senha atual" required>
-                <br>
-                <label for="password">Nova senha (deixe em branco para não alterar)</label>
-                <br>
-                <input type="password" id="novasenha" name="senha" placeholder="Criar Nova  Senha" required>
-                <br>
-                <label for="confirmação">Confirmar nova senha</label>
-                <br>
-                <input type="password" id="confirmação" name="confirmação" placeholder="Confirmar nova senha" required>
-                <br>
-              </form>
+               <form>
+                  <h1>Informações do Usuário</h1>
+                  <br>
+                <section id = "info-userup">
+                  <div class = "div-infouser">
+                    <label for="name">Nome de Usuário</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="@Fulaninho" required>
+                    <br>
+                    <label for="name">Primeiro Nome</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Fulaninho" required>
+                    <br>
+                  </div>
+                  <div>
+                    <label for="e-mail">E-mail</label>
+                    <br>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="fulaninho@digitalhouse.com" required>
+                    <br>
+                    <label for="senha">Sobrenome</label>
+                    <br>
+                    <input type="name" id="name" name="name" placeholder="da TI" required>
+                     <br>
+                  </div>
+                    <br>
+                <section id = "info-userdown">
+                  <div>
+                    <label for="senha">Senha atual (deixe em branco para não alterar)</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="***********" required>
+                    <br>
+                    <label for="senha-atual">Nova senha (deixe em branco para não alterar)</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="Criar nova senha" required>
+                    <br>
+                    <label for="nova-senha">Confirmar nova senha</label>
+                    <br>
+                    <input type="password" id="confirmação" name="confirmação" placeholder="Confirmar nova senha" required>
+                    <br>
+                  </div>
+                    <input id="save-profile" type="submit" name="save-profile">
+                </section>    
+              </form>  
             </span>  
           </div>
+          <a class="user-since">Por aqui desde: 25/03/2022</a>
         </section>
+       
         <section id = "bioaccount"> 
-            <img href = "#"id="edit-account" src="public/images/profileuser/editIcon">
+            <img href = "#"id="edit-account" src="public/images/profileuser/editIcon.svg" alt="EditBio-Account"> 
         </section>
         <section>
           <div id="activityuser"></div>
         </section>
       </box>
-      <box id = "containermylearning">
-          <section id = "quoteprofileuser">
-            <img id = "quoteprofileuser" src= "/images/profileuser/quoteprofileuser.svg" alt="Quote Profile User">  
-          </section>  
+      <section id = "quoteprofileuser">
+        <img id = "quoteprofileuser" src= "/images/profileuser/quoteprofileuser.svg" alt="Quote Profile User">  
+      </section>  
+      <box id = "container-mylearning">
           <div class="mylearningbar">
             <h1>Meu Aprendizado</h1>
             <img class = "artuser2" src= "/images/profileuser/artuser2.svg" alt="Art Profile User">
           </div> 
-          
-          <section id ="mylearning">
+       <section id ="mylearning">
             <div id="scheduletime">
+              <img class = "mylearningtarget" src= "/images/profileuser/alvo-meu-aprendizado.svg" alt="Target Image">
+              <div class = "title-description">
               <h1><strong>Programe um horário para o seu aprendizado</strong></h1>
-              <h2>Alguns minutos de estudo por dia valem a pena. Pesquisas mostram que os alunos que fazem do estudo um hábito têm maior probabilidade de alcançar suas metas. Reserve um tempo para estudar e receba lembretes usando seu programador de aprendizado.</h2>
-              <a href="#"><button id="scheduletimebutton"><strong>Começar<strong></button></a>
-              <a href="#"><button id="scheduletimebutton2"><strong>Descartar<strong></button></a>
-             <section class="mycourses">
-                 <img href = "#"id="courses" src="">  
- 
-              </section>
-              <h2>Iniciando em JavaScript Duração: 34 horas 4 de 22 aulas disponíveis</h2>
-           </div>
-                        
-          </section>
-        </box>
+              <h2>Alguns minutos de estudo por dia valem a pena. Pesquisas mostram que os alunos que fazem do estudo um hábito têm maior probabilidade de alcançar suas metas.<br>Reserve um tempo para estudar e receba lembretes usando seu programador de aprendizado.</h2>
+              </div>
+              <div class="buttonscheduletimebutton">
+              <button href="#" id="scheduletimebuttonI"><strong>Começar<strong></button>
+              <button href="#" id="scheduletimebuttonII"><strong>Descartar<strong></button>
+              </div>
+            </div>
+       </section>
+       <section id = "container-mycourses">
+          <div class="listagem-cursos">
+            <div class="icone-seta-rolagem-esquerda">
+               <img src="images/products/seta-esquerda.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+            </div>
+            <div class="curso-detalhes">
+                <div class="imagem-descritiva-curso">
+                <img src="images/products/curso1.jpg" alt="Imagem descritiva dos cursos da categoria Back-End">
+                </div>
+                <a href="/course"><p class="descricao-curso">Iniciando em JavaScript</p></a>
+                <p class="descricao-duracao-curso">Duração: 34 horas</p>
+                <strong class="aulas-disponiveis">4 de 35 aulas disponíveis</strong>
+                <div class="opcoes-user-curso">
+                  <button class="button-continue-course" href="/continue-course" ><strong>Continuar<strong alt="Botão continuar Curso"></button>
+                </div>
+            </div>
+            <div class="curso-detalhes">
+                <div class="imagem-descritiva-curso">
+                <img src="images/products/curso1.jpg" alt="Imagem descritiva dos cursos da categoria Back-End">
+                </div>
+                <a href="/course"><p class="descricao-curso">React</p></a>
+                <p class="descricao-duracao-curso">Duração: 9 horas</p>
+                <strong class="aulas-disponiveis">2 de 6 aulas disponíveis</strong>
+                <div class="opcoes-user-curso">
+                    <button class="button-continue-course" href="/continue-course" ><strong>Continuar<strong alt="Botão continuar Curso"></button>
+                </div>
+            </div>
+            <div class="curso-detalhes">
+              <div class="imagem-descritiva-curso">
+                <img src="images/products/curso1.jpg" alt="Imagem descritiva dos cursos da categoria Back-End">
+              </div>
+               <a href="/course"><p class="descricao-curso">Iniciando em JavaScript</p></a>
+               <p class="descricao-duracao-curso">Duração: 34 horas</p>
+               <strong class="aulas-disponiveis">4 de 35 aulas disponíveis</strong>
+              <div class="opcoes-user-curso">
+              <button class="button-continue-course" href="/continue-course" ><strong>Continuar<strong alt="Botão continuar Curso"></button>
+              </div>
+            </div>
+            <div class="curso-detalhes">
+              <div class="imagem-descritiva-curso">
+                 <img src="images/products/curso1.jpg" alt="Imagem descritiva dos cursos da categoria Back-End">
+              </div>
+              <a href="/course"><p class="descricao-curso">Boas Patricas em Código</p></a>
+              <p class="descricao-duracao-curso">Duração: 3 horas</p>
+              <strong class="aulas-disponiveis">1 de 5 aulas disponíveis</strong>
+              <div class="opcoes-user-curso">
+                <button class="button-continue-course" href="/continue-course" ><strong>Continuar<strong alt="Botão continuar Curso"></button>
+                </div>
+            </div>
+                <div class="icone-seta-rolagem-direita">
+                 <img src="images/products/seta-direita.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+                </div>
+              </div>             
+        </section>
+      </box>
+      
     </main>
     <footer>
-      <%-include("partials/footer") %>
-    </footer>
+      <span id="rodape-footer">
+       <div id="marca-skooby-footer">
+        <p id="marca-skooby">© SkoobyTech 2022</p>
+       </div>
+     
+       <nav id="redes-sociais">
+        <img class="icones-redes-sociais" src="images/home/linkedin.svg" alt="Ícone LinkedIn">
+        <img class="icones-redes-sociais" src="images/home/facebook.svg" alt="Ícone Facebook">
+        <img class="icones-redes-sociais" src="images/home/instagram.svg" alt="Ícone Instagram">
+        <img class="icones-redes-sociais" src="images/home/twitter.svg" alt="Ícone Twitter">
+        <img class="icones-redes-sociais" src="images/home/youtube.svg" alt="Ícone Youtube">
+       </nav>
+      </span>
+     </footer>
   </body>
 
 </html>
