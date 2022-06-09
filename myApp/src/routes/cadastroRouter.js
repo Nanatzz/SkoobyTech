@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/cadastro', (req,res) => res.render('cadastro'))
+router.get('/cadastre', (req,res) => res.render('cadastre'))
 
 module.exports = router;
