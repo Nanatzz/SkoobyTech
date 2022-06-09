@@ -86,46 +86,48 @@ header #logo-header{
 #opcoes-user-header{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin: 0px 30px;
+    background-color: none;
 }
-  
-#icone-carrinho{
-    cursor: pointer;
-    margin-top: 2px;
-}
-   
-#link-entrar{
-    color: #fff;
-    font-weight: 700;
-    margin: 0px 25px;
-    font-size: 20px;
-}
-
-#link-entrar:hover{
-    color: #01B671;
-}
-
-   
-#botao-cadastro {
-    width: 150px;
-    height: 45px;
-    margin-bottom: 3px;
+ 
+.button-card-course{
     border-radius: 5px;
     border: none;
-    background-color: #fff;
-    color: #263238D9;
-    font-weight: 800;
+    width: 37px;
+    height: 38px;
     cursor: pointer;
-    font-size: 18px;
-    transition: all 0.7s;
+    margin: 2px;
+    padding: 2px;
+    padding: 1px;
+    background-color: none;
 }
    
-#botao-cadastro:hover{
-    background-color: #01B671;
-    color: #fff;
+.button-favorite-course{
+    border-radius: 5px;
+    border: none;
+    width: 37px;
+    height: 38px;
+    padding: 3px;
+    padding: 1px;
+    background-color: none;
 }
 
+.button-profile-ser{
+    border-radius: 5px;
+    border: none;
+    width: 37px;
+    height: 38px;
+    padding: 3px;
+    padding: 1px;
+    background-color: none;
+}
+
+#container-bodyprofileuser {
+    background-color:#1D2225;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 15px 0px;
+}
 
 #botao-acessibilidade{
     display: flex;
@@ -138,9 +140,6 @@ header #logo-header{
     margin-top: 20px;
 }
 
-#container-bodyprofileuser {
-    background-color: #1D2225;
-}
 
 .artuser {
     margin: -16px;
@@ -160,7 +159,7 @@ header #logo-header{
 }
 
 #noticeprofileuser h1 {
-    width: 311px;
+    width: 315px;
     color:  white;
     font-size: 35px; 
 }
@@ -194,6 +193,7 @@ header #logo-header{
     font-size: 20px;
     margin: 15px 0px 0px 15px;
     padding: 0px 0px 0px 0px;
+    cursor: pointer;
 }
 
 #myaccount p:hover{
@@ -203,14 +203,15 @@ header #logo-header{
 #myaccount .user-since{
     display: flex;
     justify-content: flex-end;
-    margin: 25px 15px 0px 0px
+    margin: 25px 15px 0px 0px;
+    cursor: pointer;
 }
 
-#configs-account {
+.configs-account {
     width: 155px;
     height: 30px;
     margin: 10px 15px 0px 0px;
-    color: #1C2022;
+    color: #393C3D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #FFC727;
     font-size: 20px;
@@ -218,8 +219,10 @@ header #logo-header{
     border: none;
 }
 
-#configs-account h1:hover{
-    border-color: #01B671
+.configs-account:hover{
+    background-color: #1C2022;
+    color: #FFC727;
+    cursor: pointer;
 }
   
 .myaccountgradient {
@@ -272,14 +275,12 @@ form input{
     font-size: 15px;
     color: #393C3D;
     transition: border 0s;
+    cursor: pointer;
 }
    
-input:hover{
-    border: solid 3px #FFC727;
-}
    
 input:focus{
-    outline: solid 2px #FFC727;
+    outline: solid 4px #FFC727;
 }
    
 form label{
@@ -295,38 +296,127 @@ form label{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 90px;
     height: 30px;
-    background-color: none;
     border-radius: 5px;
+    padding: 5px;
+    margin: 50px 0px 0px 0px;
     border: none; 
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
 
+
 #bioaccount {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 15px 0px 0px 15px;
-    padding: 15px 0px 15px 0px;
+    margin: 80px 0px 0px 15px;
+    padding: 23px 0px 0px 0px;
     width: 750px;
-    height: 420px;
+    height: 361px;
     border-radius: 0px 0px 10px 10px;
-    background-color: #393c3d8d;
-    color: white;
-    font-size: 25px;
+    background-color: #393c3d;
 }
 
-#activityuser {
-    color: white;
-    font-size: 10px;
+
+#bioaccount .profile-user-photo{
+    display: flex;
+    justify-content: space-between;
     width: 750px;
-    height: 215px;
-    margin: 15px 0px 0px 15px;
-    padding: 15px 0px 0px 15px;
+    height: 71px;
+    margin: -86px 0px 15px 0px;
+    padding: 15px 0px 15px 0px;
+    background-color: #393c3d;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.user-photo {
+    width: 500px;
+    height: 230px;
+    margin: -148px 0px -82px 125px;
+    padding: 0px 0px 0px 0px;
+    background-color: none;
+}
+
+.edit-profile-photo-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 38px;
+    height: 21px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px 15px 0px 0px;
+}
+
+
+.user-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    margin: 5px 0px 5px 8px;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    font-size: 25px;
+
+} 
+
+#bio-user-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 30px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: white;
+    font-size: 15px;
+
+}
+
+#bio-user-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio-user-textarea {
+    width: 650px;
+    height: 170px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: #C0C0C0;
+    background-color: #515556;
+
+}
+
+.edit-bio-account-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 38px;
+    height: 21px;
+    margin: 170px 0px 0px 0px;
+}
+
+#container-activityuser {
+    margin: 5px 0px 0px 15px;
+    padding: 5px 0px 0px 0px;
+    width: 98%;
+    height: 219px;
     background-color: #393c3d8d;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) 
+} 
+
+.activity-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 98%;
+    height: 30px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: white;
+    font-size: 15px;
 }
 
 #quoteprofileuser {
@@ -336,71 +426,88 @@ form label{
     background-color: none;
     margin: 30px 57px 50px 35px
 }
+/* #container-mylearning {
 
+} */
 .mylearningbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        width: 98%;
-        height: 120px;
-        border-radius: 5px 5px 5px 5px;
-        margin: 15px;
-        font-size: 25px;
-        color: white;
-        background-color: #393C3D; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 98%;
+    height: 120px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 15px;
+    font-size: 25px;
+    color: white;
+    background-color: #393C3D; 
 }
 
 .artuser2 {
     padding: 1px 8px 284px 0px;
     margin: -10px;
     background-color: none;
+    cursor: pointer;
 }
-
 
 #mylearning {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     width: 98%;
-    height: 650px;
-    margin: 15px;
-    background-color: #393C3D; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 15px 0px 0px 15px;
+    padding: 15px 15px 24px 15px;
+    background-color: #393C3D;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
+
+
 #scheduletime{
     display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    height: 350px;
-    margin: 15px 15px 21px 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 5px 0px;
+    width: 100%;
+    height: 290px;
     background-color:#393C3D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
 }
 
 .mylearningtarget{
-    width: 150px;
-    background-color: none;
-    margin: 0px 15px 5px 0px;
-    padding: 0px 15px 5px 0px;;
+    width: 190px;
+    border-color: none;
+    color: none;
+    margin: 0px 0px 0px 15px;
+
 }
 
 
 #scheduletime h1 {
     color: white;
-    font-size: 31px;
-    width: 635px;
-    height: 35px;
-    margin: 0px 15px 5px 0px;
-    padding: 15px 0px 15px;
+    font-size: 32px;
+    width: 650px;
+    height: 80px;
+    margin: 0px 0px 0px 15px;
+    padding: 15px 0px 0px 0px;
+
 }
 #scheduletime h2 {
     color: white;
     font-size: 18px;
-    width: 850px;
-    height: 100px;
+    width: 820px;
+    height: 160px;
+    padding: 15px;
 }
-#scheduletimebutton{
+.buttonsscheduletimebutton {
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    height: 30px;
+    margin: -110px 0px 0px 15px;
+    background-color: none;
+}
+#scheduletimebuttonI{
     width: 100px;
     height: 30px;
     text-align: center;
@@ -412,11 +519,17 @@ form label{
     border: none; 
 }
 
-#scheduletimebutton2{
+
+#scheduletimebuttonI:hover{
+    background-color: #1C2022;
+    color: #FFC727;
+    cursor: pointer;
+}
+
+#scheduletimebuttonII{
     width: 100px;
     height: 30px;
     text-align: center;
-    margin-left: 5px;
     color: #1C2022;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #A6A6A6;
@@ -425,104 +538,126 @@ form label{
     border: none; 
 }
 
-.mycourses {
-    display: flex;
-    width: 500px;
-    height: 250px;
-    margin: 15px 15px 15px 15px;
-    background-color: #A6A6A6;
-    color: white;
+#scheduletimebuttonII:hover{
+    background-color: #1C2022;
+    color: #FFC727;
+    cursor: pointer;
 }
 
-.mycourses h1 {
-    font-size: 10px;
-    color: white;
+#container-mycourses {
+    width: 98%;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    
 }
 
+.icone-seta-rolagem-esquerda{
+    width: 60px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #393C3D;
+    padding: 14px 5px;
+    cursor: pointer;
+}
+   
+.icone-seta-rolagem-direita{
+    width: 60px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #393C3D;
+    padding: 14px 0px 0px 11px;
+    cursor: pointer;
+}
 
-#container-footer {
-    width: 100%;
-    height: 240px;
+.listagem-cursos{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #0F1113;
+    width: 100%;
+    background-color: #393C3D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
 }
    
-#logo-footer{
-    margin: 30px;
-    padding-bottom: 10px;
-}
-
-#area-navegacao-footer{
- display: flex;
-}
-
-.conteudo-nav{
- margin: 40px;
- color: #fff;
-}
-
-.titulo-nav{
- margin: 10px;
- list-style: none;
- text-decoration: none;
-}
-
-.topico-nav{
- color: #C0C0C0;
- list-style: none;
- text-decoration: none;
- font-size: 14px;
- font-weight: 100;
-}
-
-
-#newsletter-footer{
- color: #fff;
- margin-right: 50px;
-}
-
-#newsletter-detalhes{
- margin: 7px 0px 15px 0px;
- font-size: 14px;
- font-weight: 100;
-}
-
-#campo-newsletter{
- display: flex;
-}
-
-#email-newsletter{
- width: 190px;
- height: 31px;
- background-color: #fff;
- border-radius: 5px;
- color: #263238D9;
- padding: 8px 0px 1px 7px;
- font-size: 13px;
-}
-
-#botao-newsletter{
- margin-left: 10px;
- width: 130px;
- height: 31px;
- border-radius: 5px;
- border: none;
- background-color: #000;
- box-shadow: 3px 3px 3px #000;
- color: #fff;
- font-weight: 900;
- cursor: pointer;
-}
-
-#faixa-footer{
-    border-top: 1px #C0C0C0 solid;
-    width: 2px;
-    height: 1px;
+.imagem-descritiva-curso{
+    width: 210px;
+    height: 140px;
+    margin-bottom: 10px;
 }
    
+.imagem-descritiva-curso img{
+    width: 100%;
+    height: 140px;
+}
+   
+.curso-detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 98%;
+    height: 300px;
+    margin: 0px 0px 0px 90px;
+    padding: 0px 0px 0px 15px;
+    color: white
+}
+  
+.descricao-curso{
+    margin: 5px 0px;
+    width: 100%;
+    font-size: 15;
+    color: #fff;
+ 
+}
+
+.descricao-curso:hover{
+    color: #FFC727;
+}
+   
+.descricao-duracao-curso{
+    margin: 2px 0px;
+    font-size: 14px;
+}
+.aulas-disponiveis{
+    margin: 5px 0px;
+    font-size: 18px;
+    color: #fff;
+}
+   
+.opcoes-user-curso{
+    display: flex;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+}
+   
+.botao-carrinho-curso{
+    border-radius: 5px;
+    border: none;
+    width: 37px;
+    height: 38px;
+    margin-right: 5px;
+    padding-right: 2px;
+    padding-top: 1px;
+}
+   
+.button-continue-course {
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+    color: #393C3D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFC727;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-continue-course:hover{
+    background-color: #1C2022;
+    color: #FFC727;
+    cursor: pointer;
+}
+
+
 #rodape-footer{
     display: flex;
     justify-content: space-between;
@@ -534,7 +669,7 @@ form label{
     color: #C0C0C0;
     margin: 0px 40px 30px
 }
-   
+  
 #redes-sociais{
     margin-right: 50px;
 }
