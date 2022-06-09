@@ -28,11 +28,7 @@ app.get('/products', function (req,res) {
   res.render('products')
 })
 
-app.get('/checkout', function (req,res) {
-  res.render('checkout')
-})
-
-app.get('/course', function (req,res) {
+app.get('/product/id', function (req,res) {
   res.render('internalProduct')
 })
 
@@ -45,11 +41,15 @@ app.get('/login', function (req,res) {
 })
 
 app.get('/cadastro', function (req,res) {
-  res.render('cadastro')
+  res.render('cadastre')
 })
 
 app.get('/carrinho', function (req,res) {
-  res.render('carrinho')
+  res.render('cart')
+})
+
+app.get('/checkout', function (req,res) {
+  res.render('checkout')
 })
 
 app.set('view engine', 'ejs');
@@ -64,12 +64,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.get('/products', productsRouter);
 app.get('/home', homeRouter);
-app.get('/course', internalProductRouter);
+app.get('/product/id', internalProductRouter);
 app.get('/profileUser', profileUserRouter);
 app.get('/checkout', checkoutRouter);
 app.get('/login', loginRouter);
-app.get('/cadastro', cadastroRouter);
-app.get('/carrinho', carrinhoRouter);
+app.get('/cadastre', cadastroRouter);
+app.get('/cart', carrinhoRouter);
 
 app.get('/', (req,res) => res.render('/products'))
 
