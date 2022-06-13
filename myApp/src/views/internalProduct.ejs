@@ -2,181 +2,239 @@
 <html lang="en">
 <head>
     <%-include("partials/head") %>
-    <link rel="stylesheet" href="css/internal-product.css">
+    <link rel="stylesheet" href="/css/internalProduct.css">
     <title>Produto Interna</title>
 </head>
 <body>
     <header>
         <%-include("partials/header") %>
     </header>
+    <div id="botao-acessibilidade">
+        <img id="icone-acessibilidade" src="/images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
+    </div>
     <main>
-        <div id="botao-acessibilidade">
-            <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
-        </div>
-        <span id="container-apresentacao-curso">
+        <span id="container-curso">
             <div id="preview-curso">
                 <div id="video-curso">
-                    <img src="images/internalProduct/load-video-preview.svg" alt="teste">
-                    <p>Pré-visualização do curso</p>
+                    <img id="img-video-curso" src="/images/internalProduct/load-video-preview.svg" alt="teste">
+                    <p id="txt-video-curso">Pré-visualização do curso</p>
                 </div>
                 
                 <div id="valores-curso">
                     <div id="preco">
-                        <p class="preco-detalhes">De R$99,99</p>
-                        <p><strong>R$ 00,00</strong></p>
-                        <p class="preco-detalhes">Ganhe 100% de desconto</p>
-                    </div>
-                    <div id="promocao">
-                        <img src="images/internalProduct/promocao-image.svg">
-                        <p>Promoção acaba em 00:00 horas</p>
+                        <div id="preco-detalhes">
+                            <p class="desconto">De R$99,99</p>
+                            <p id="preco-curso"><strong>R$ 00,00</strong></p>
+                            <p class="desconto">Ganhe 100% de desconto</p>
+                        </div>
+                        <div id="promocao">
+                            <img id="img-promocao" src="/images/internalProduct/promocao-image.svg">
+                            <p id="txt-promocao">Promoção acaba em 00:00 horas</p>
+                        </div>
                     </div>
                 </div>
 
                 <div id="botoes-user">
                     <form action="/user" method="get">
-                        <button id="botao-carrinho" href="#">Adicionar ao carrinho <img src="images/products/carrinho-products.svg"></button>
-                        <button id="botao-favoritos" href="#"><img src="images/products/icone-favoritar.svg"></button>
+                        <button id="botao-carrinho" href="#"><img src="/images/products/carrinho-products.svg"></button>
+                        <button id="botao-favoritos" href="#"><img src="/images/products/icone-favoritar.svg"></button>
                         <button id="botao-comprar" href="#"><strong>COMPRAR AGORA</strong></button>
                     </form>
                     <a id="devolucao" href="/perguntas-frequentes">Garantia de devolução do dinheiro em 30 dias</a>
                 </div>
 
+                <p id="titulo-detalhes-curso"><strong>Detalhes do curso</strong></p>
                 <span id="detalhes-curso">
-                    <p id="titulo-detalhes-curso"><strong>Detalhes do curso</strong></p>
-                    <div id="informacoes-detalhes-curso">
-                        <img src="images/internalProduct/image-video-aula.svg" alt="">
-                        <p class="caracteristicas-curso">0 horas de vídeo aula</p>
-                        <img src="images/internalProduct/image-simulados.svg" alt="">
+                    <div id="img-detalhes-curso">
+                        <img class="icone-detalhes-curso" src="/images/internalProduct/image-video-aula.svg" alt="">
+                        <img class="icone-detalhes-curso" src="/images/internalProduct/image-simulados.svg" alt="">
+                        <img class="icone-detalhes-curso" src="/images/internalProduct/image-vitalidade.svg" alt="">
+                        <img class="icone-detalhes-curso" src="/images/internalProduct/image-atividades.svg" alt="">
+                        <img class="icone-detalhes-curso" src="/images/internalProduct/image-certificado.svg" alt="">
+                    </div>
+                    <div id="txt-detalhes-curso">
+                        <p class="caracteristicas-curso-primeiro">0 horas de vídeo aula</p>
                         <p class="caracteristicas-curso">0 simulados</p>
-                        <img src="images/internalProduct/image-vitalidade.svg" alt="">
                         <p class="caracteristicas-curso">Acesso total vitalício</p>
-                        <img src="images/internalProduct/image-atividades.svg" alt="">
                         <p class="caracteristicas-curso">000 atividades</p>
-                        <img src="images/internalProduct/image-certificado.svg" alt="">
                         <p class="caracteristicas-curso">Certificado de participação</p>
                     </div>
-                    <a href="#">Compartilhar este curso</a>
                 </span>
+                <a id="compartilhar-curso" href="#">Compartilhar este curso</a>
             </div>
+            <span id="equipe-docente">
+                <p id="titulo-equipe-docente">Professores</p>
+                <div id="equipe-professores">
+                    <div class="professores"><img src=""></div>
+                    <div class="professores"><img src=""></div>
+                    <div class="professores"><img src=""></div>
+                    <div class="professores"><img src=""></div>
+                </div>
+            </span>
         </span>
 
         <span id="container-informacoes-curso">
             <div id="trilha-curso">
-                <p>Página Home > Metodologias de Desenvolvimento > GIT</p>
+                <a href="/products">Página Home > Metodologias de Desenvolvimento > GIT</a>
             </div>
             <div id="informacoes-iniciais-curso">
                 <h1>Técnicas de GIT - Nível: zero ao expert</h1>
-                <h2>Descrição resumida do que será abordado no curso</h2>
+                <h3>Aqui fica uma descrição resumida do que o aluno consumirá no curso escolhido bla bla bla</h3>
                 <a href="#">Classificação e comentários (estrelas)</a>
                 <p class="info-curso">Quantos alunos já compraram:</p>
                 <p class="info-curso">Criado por: <a href="#">link perfil</a></p>
-                <p class="info-curso">Data de atualização do curso: Atualizado em 24 de Março de 2022</p>
-                <p>Idioma do curso: Português BR</p>
+                <p class="info-curso">Data de atualização do curso: Atualizado em <a>24 de Março de 2022</a></p>
+                <p>Idioma do curso: <a>Português BR</a></p>
             </div>
         </span>
 
-        <img src="images/internalProduct/main-image.svg">
+        <img id="freepick-internalProduct" src="/images/internalProduct/main-image.svg">
 
         <span id="container-voce-vai-aprender">
-            <h2>O que você vai aprender</h2>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Realizar a instalação do Git</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Utilizar os principais comandos do Git</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Entender os estados dos arquivos do projeto</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Integrar projetos versionados pelo Git ao GitHub</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Enviar e receber as versões do projeto na plataforma Github</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Resolver conflitos de alterações em arquivos do projeto</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Trabalhar com branches</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Desenvolver os principais fluxos de trabalho em equipe</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Gerenciar os arquivos em stashes</p>
-            <img src="images/internalProduct/image-check.svg">
-            <p class="tecnicas-ensinadas">Utilizar pull requests, issues e forks</p>
-        </span>
-
-        <span id="equipe-docente">
-            <div class="professores"><img src=""></div>
-            <div class="professores"><img src=""></div>
-            <div class="professores"><img src=""></div>
-            <div class="professores"><img src=""></div>
-        </span>
-
-        <span id="container-mais-detalhes-curso">
-            <div class="caixa-mais-detalhes">
-                <img src="images/internalProduct/mais-detalhes.svg">
-                <p>Conteúdo do Curso</p>
+            <h2 id="titulo-voce-vai-aprender">O que você vai aprender</h2>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Realizar a instalação do Git</p>
             </div>
-            <div class="caixa-mais-detalhes">
-                <img src="images/internalProduct/mais-detalhes.svg">
-                <p>Descrição e Reuqisitos</p>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Utilizar os principais comandos do Git</p>
             </div>
-            <div class="caixa-mais-detalhes">
-                <img src="images/internalProduct/mais-detalhes.svg">
-                <p>Comentários e Avalicações</p>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Entender os estados dos arquivos do projeto</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Integrar projetos versionados pelo Git ao GitHub</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Enviar e receber as versões do projeto na plataforma Github</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Resolver conflitos de alterações em arquivos do projeto</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Trabalhar com branches</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Desenvolver os principais fluxos de trabalho em equipe</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Gerenciar os arquivos em stashes</p>
+            </div>
+            <div class="tecnicas-ensinadas">
+                <img class="img-check" src="/images/internalProduct/image-check.svg">
+                <p>Utilizar pull requests, issues e forks</p>
             </div>
         </span>
+        
+        <div id="container-detalhes-feedback">
+            <span id="mais-detalhes-curso">
+                <div class="caixa-mais-detalhes">
+                    <img class="icone-mais-detalhes" src="/images/internalProduct/mais-detalhes.svg">
+                    <p>Conteúdo do Curso</p>
+                </div>
+                <div class="caixa-mais-detalhes">
+                    <img class="icone-mais-detalhes" src="/images/internalProduct/mais-detalhes.svg">
+                    <p>Descrição e Requisitos</p>
+                </div>
+                <div class="caixa-mais-detalhes">
+                    <img class="icone-mais-detalhes" src="/images/internalProduct/mais-detalhes.svg">
+                    <p>Comentários e Avalicações</p>
+                </div>
+            </span>
+    
+            <span id="container-feedback-do-aluno">
+                <h2 id="titulo-feedback">Feedback do aluno</h2>
+                <div id="cassificacao-feedback-alunos">
+                    <div id="classificacao-nota">
 
-        <span id="feedback-do-aluno">
-            <h2>Feedback do aluno</h2>
-            <h2 id="nota-feedback">5.0</h2>
-            <img src="images/internalProduct/full-star.svg" alt="">
-            <img src="images/internalProduct/full-star.svg" alt="">
-            <img src="images/internalProduct/full-star.svg" alt="">
-            <img src="images/internalProduct/full-star.svg" alt="">
-            <img src="images/internalProduct/full-star.svg" alt="">
+                        <h2 id="nota-feedback">5.0</h2>
+                        <div id="star-nota">
+                            <img class="icone-star" src="/images/internalProduct/full-star.svg" alt="">
+                            <img class="icone-star" src="/images/internalProduct/full-star.svg" alt="">
+                            <img class="icone-star" src="/images/internalProduct/full-star.svg" alt="">
+                            <img class="icone-star" src="/images/internalProduct/full-star.svg" alt="">
+                            <img class="icone-star" src="/images/internalProduct/full-star.svg" alt="">
+                        </div>
+                    </div>
 
-            <div id="medidores-feedback">
-                <div class="medidor"></div>
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <p class="procentagem-feedback">0%</p>
-                <div class="medidor"></div>
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <p class="procentagem-feedback">0%</p>
-                <div class="medidor"></div>
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <p class="procentagem-feedback">0%</p>
-                <div class="medidor"></div>
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <p class="procentagem-feedback">0%</p>
-                <div class="medidor"></div>
-                <img src="images/internalProduct/full-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <img src="images/internalProduct/empty-star.svg" alt="">
-                <p class="procentagem-feedback">0%</p>
-            </div>
-        </span>
+                    <div id="medidores-feedback">
+                        <div class="medidor-classificacao">
+                            <div class="medidor"></div>
+                            <div class="star">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                            </div>
+                            <p class="procentagem-feedback">0%</p>
+                        </div>
+
+                        <div class="medidor-classificacao">
+                            <div class="medidor"></div>
+                            <div class="star">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                            </div>
+                            <p class="procentagem-feedback">0%</p>
+                        </div>
+
+                        <div class="medidor-classificacao">
+                            <div class="medidor"></div>
+                            <div class="star">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                            </div>
+                            <p class="procentagem-feedback">0%</p>
+                        </div>
+
+                        <div class="medidor-classificacao">
+                            <div class="medidor"></div>
+                            <div class="star">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                            </div>
+                            <p class="procentagem-feedback">0%</p>
+                        </div>
+
+                        <div class="medidor-classificacao">
+                            <div class="medidor"></div>
+                            <div class="star">
+                                <img src="/images/internalProduct/full-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                                <img src="/images/internalProduct/empty-star.svg" alt="">
+                            </div>
+                            <p class="procentagem-feedback">0%</p>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
 
         <span id="outros-cursos-semelhantes">
             <%-include("partials/product-list") %>
         </span>
-
         <div id="botao-whatsapp">
-            <img id="icone-whatsapp" src="images/internalProduct/icone-whatsapp.svg" alt="ícone do botão Whatsapp - Entre em contato conosco!">
+            <img id="icone-whatsapp" src="/images/internalProduct/icone-whatsapp.svg" alt="ícone do botão Whatsapp - Entre em contato conosco!">
         </div>
     </main>
     <footer>

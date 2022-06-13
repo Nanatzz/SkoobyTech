@@ -92,11 +92,17 @@ header #logo-header{
 
 #botao-acessibilidade{
  display: flex;
- justify-content: flex-end;
- align-items: flex-start;
  cursor: pointer;
  padding-top: 20px;
- background-color: #1C2124;
+ background-color: none;
+ transition: all 1s;
+ position: fixed;
+ right: 0px;
+ z-index: 16;
+}
+
+#botao-acessibilidade:hover{
+ width: 35px;
 }
 
 body{
@@ -112,6 +118,7 @@ body{
  align-items: flex-start;
  width: 100%;
  height: 200px;
+ padding-top: 70px;
 }
 
 #compra-realizada{

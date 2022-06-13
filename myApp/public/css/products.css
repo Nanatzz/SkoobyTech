@@ -65,7 +65,7 @@ header #logo-header{
 
 #campo-pesquisa{
  color: #C0C0C0;
- font-size : 15px;
+ font-size: 18px;
  background-color: #373B3E;
  align-items: center;
  margin-left: 12px;
@@ -122,17 +122,23 @@ header #logo-header{
 
 #botao-acessibilidade{
  display: flex;
- width: 100%;
- justify-content: flex-end;
- align-items: flex-start;
  cursor: pointer;
  padding-top: 20px;
- background-color: #1C2124;
+ background-color: none;
+ transition: all 1s;
+ position: fixed;
+ right: 0px;
+ z-index: 16;
+}
+
+#botao-acessibilidade:hover{
+ width: 35px;
 }
 
 #container-courses {
  flex-wrap: wrap;
  background-color: #1C2124;
+ padding-top: 90px;
 }
 
 #container-categorias{
@@ -144,30 +150,40 @@ header #logo-header{
 
 .categoria{
  width: 100%;
- margin: 0px 0px 40px 0px;
+ margin: 0px 0px 50px 0px;
+ padding-bottom: 80px;
 }
 
 
 .titulo-categorias{
  color: #0071FF;
- margin: 10px 10px 20px 80px;
- text-decoration: underline;
+ margin: 10px 10px 20px 60px;
 }
 
 .icone-seta-rolagem-esquerda{
- width: 60px;
- height: 50px;
- border-radius: 2px;
+ width: 50px;
+ height: 70px;
+ border-radius: 3px;
+ background-color: #010101;
+ padding: 24px 10px;
+ cursor: pointer;
+}
+
+.icone-seta-rolagem-esquerda:hover{
  background-color: #393C3D;
- padding: 14px 5px;
 }
 
 .icone-seta-rolagem-direita{
- width: 60px;
- height: 50px;
- border-radius: 2px;
+ width: 50px;
+ height: 70px;
+ border-radius: 3px;
+ background-color: #010101;
+ padding: 25px 0px 0px 17px;
+ cursor: pointer;
+}
+
+.icone-seta-rolagem-direita:hover{
  background-color: #393C3D;
- padding: 14px 0px 0px 11px;
 }
 
 .listagem-cursos{
@@ -175,42 +191,43 @@ header #logo-header{
  justify-content: space-between;
  align-items: center;
  width: 100%;
+ position: relative;
+
 }
 
 .imagem-descritiva-curso{
- width: 210px;
- height: 140px;
+ width: 300px;
+ height: 165px;
  margin-bottom: 10px;
 }
 
-.imagem-descritiva-curso img{
+.img-do-curso{
  width: 100%;
- height: 140px;
+ height: 165px;
 }
 
 .curso-detalhes{
  display: flex;
  flex-direction: column;
  align-items: flex-start;
- width: 200px;
  height: 270px;
- margin: 30px 40px;
 }
 
 .descricao-curso{
  margin: 5px 0px;
  width: 100%;
  color: #fff;
+ font-size: 20px;
 }
 
 .descricao-duracao-curso{
  margin: 5px 0px;
- font-size: 14px;
+ font-size: 18px;
 }
 
 .valor-curso{
  margin: 5px 0px;
- font-size: 20px;
+ font-size: 22px;
 }
 
 .opcoes-user-curso{
@@ -220,40 +237,59 @@ header #logo-header{
 .botao-carrinho-curso{
  border-radius: 5px;
  border: none;
- width: 37px;
- height: 38px;
+ width: 40px;
+ height: 40px;
  margin-right: 5px;
  padding-right: 2px;
  padding-top: 1px;
+ cursor: pointer;
+}
+
+.botao-carrinho-curso:hover{
+ background-color: #8B8B8B;
 }
 
 .botao-favoritar-curso{
  border-radius: 5px;
  border: none;
- width: 37px;
- height: 38px;
+ width: 40px;
+ height: 40px;
  padding-top: 3px;
  padding-left: 1px;
+ cursor: pointer;
+}
+
+.botao-favoritar-curso:hover{
+ background-color: #8B8B8B;
 }
 
 .link-ver-detalhes{
  color: #fff;
  font-weight: 700;
- margin: 7px;
- text-decoration: underline;
+ margin: 5px 0px 0px 11px;
+ font-size: 17px;
+ width: 100%;
+}
+
+.link-ver-detalhes:hover{
+ color: #0071FF;
 }
 
 .link-ver-todos{
- display: flex;
- width: 100%;
  font-weight: 900;
- justify-content: flex-end;
  cursor: pointer;
- padding-right: 50px;
  background-color: #1C2124;
  color: #0071FF;
  text-decoration: underline;
- margin-top: 30px;
+ margin-top: 90px;
+ font-size: 20px;
+ position: relative;
+ left: 90vw;
+ top: 9vh;
+}
+
+.link-ver-todos:hover{
+ color:#fff;
 }
 
 #parceiros {

@@ -461,7 +461,6 @@ form label{
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
-
 #scheduletime{
     display: flex;
     justify-content: space-between;
@@ -484,7 +483,7 @@ form label{
 
 
 #scheduletime h1 {
-    color: white;
+    color: #fff;
     font-size: 32px;
     width: 650px;
     height: 80px;
@@ -493,7 +492,7 @@ form label{
 
 }
 #scheduletime h2 {
-    color: white;
+    color: #fff;;
     font-size: 18px;
     width: 820px;
     height: 160px;
@@ -548,7 +547,6 @@ form label{
     width: 98%;
     height: auto;
     margin: 0px 0px 0px 15px;
-    
 }
 
 .icone-seta-rolagem-esquerda{
@@ -598,7 +596,7 @@ form label{
     height: 300px;
     margin: 0px 0px 0px 90px;
     padding: 0px 0px 0px 15px;
-    color: white
+    color: #fff;
 }
   
 .descricao-curso{
@@ -608,7 +606,6 @@ form label{
     color: #fff;
  
 }
-
 .descricao-curso:hover{
     color: #FFC727;
 }
@@ -656,7 +653,6 @@ form label{
     color: #FFC727;
     cursor: pointer;
 }
-
 
 #rodape-footer{
     display: flex;
