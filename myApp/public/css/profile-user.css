@@ -122,6 +122,12 @@ header #logo-header{
     background-color: none;
 }
 
+#container-bodyprofileuser {
+    background-color:#1D2225;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 15px 0px;
+}
 
 #botao-acessibilidade{
     display: flex;
@@ -134,9 +140,6 @@ header #logo-header{
     margin-top: 20px;
 }
 
-#container-bodyprofileuser {
-    background-color: #1D2225;
-}
 
 .artuser {
     margin: -16px;
@@ -293,38 +296,127 @@ form label{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 90px;
     height: 30px;
-    background-color: none;
     border-radius: 5px;
+    padding: 5px;
+    margin: 50px 0px 0px 0px;
     border: none; 
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
 
+
 #bioaccount {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 15px 0px 0px 15px;
-    padding: 15px 0px 15px 0px;
+    margin: 80px 0px 0px 15px;
+    padding: 23px 0px 0px 0px;
     width: 750px;
-    height: 420px;
+    height: 361px;
     border-radius: 0px 0px 10px 10px;
-    background-color: #393c3d8d;
-    color: white;
-    font-size: 25px;
+    background-color: #393c3d;
 }
 
-#activityuser {
-    color: white;
-    font-size: 10px;
+
+#bioaccount .profile-user-photo{
+    display: flex;
+    justify-content: space-between;
     width: 750px;
-    height: 215px;
-    margin: 15px 0px 0px 15px;
-    padding: 15px 0px 0px 15px;
+    height: 71px;
+    margin: -86px 0px 15px 0px;
+    padding: 15px 0px 15px 0px;
+    background-color: #393c3d;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.user-photo {
+    width: 500px;
+    height: 230px;
+    margin: -148px 0px -82px 125px;
+    padding: 0px 0px 0px 0px;
+    background-color: none;
+}
+
+.edit-profile-photo-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 38px;
+    height: 21px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px 15px 0px 0px;
+}
+
+
+.user-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    margin: 5px 0px 5px 8px;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    font-size: 25px;
+
+} 
+
+#bio-user-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 30px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: white;
+    font-size: 15px;
+
+}
+
+#bio-user-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio-user-textarea {
+    width: 650px;
+    height: 170px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: #C0C0C0;
+    background-color: #515556;
+
+}
+
+.edit-bio-account-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 38px;
+    height: 21px;
+    margin: 170px 0px 0px 0px;
+}
+
+#container-activityuser {
+    margin: 5px 0px 0px 15px;
+    padding: 5px 0px 0px 0px;
+    width: 98%;
+    height: 219px;
     background-color: #393c3d8d;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) 
+} 
+
+.activity-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 98%;
+    height: 30px;
+    margin: 5px 0px 5px 8px;
+    padding: 5px 0px 0px 0px;
+    color: white;
+    font-size: 15px;
 }
 
 #quoteprofileuser {
@@ -358,12 +450,15 @@ form label{
     cursor: pointer;
 }
 
+validationsUser
 #container-mylerning {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+
+main
 #mylearning {
     display: flex;
     justify-content: space-between;
@@ -374,7 +469,6 @@ form label{
     background-color: #393C3D;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
-
 
 #scheduletime{
     display: flex;
@@ -398,7 +492,7 @@ form label{
 
 
 #scheduletime h1 {
-    color: white;
+    color: #fff;
     font-size: 32px;
     width: 650px;
     height: 80px;
@@ -407,7 +501,7 @@ form label{
 
 }
 #scheduletime h2 {
-    color: white;
+    color: #fff;;
     font-size: 18px;
     width: 820px;
     height: 160px;
@@ -464,7 +558,6 @@ form label{
     width: 98%;
     height: auto;
     margin: 0px 0px 0px 15px;
-    background-color: #393C3D;
 }
 
 .icone-seta-rolagem-esquerda{
@@ -491,7 +584,13 @@ form label{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+validationsUser
     height: 500px;
+
+    background-color: #393C3D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
+main
 }
    
 .imagem-descritiva-curso{
@@ -509,10 +608,11 @@ form label{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 200px;
-    height: 270px;
-    margin: 30px 40px;
-    color: white
+    width: 98%;
+    height: 300px;
+    margin: 0px 0px 0px 90px;
+    padding: 0px 0px 0px 15px;
+    color: #fff;
 }
   
 .descricao-curso{
@@ -521,6 +621,9 @@ form label{
     font-size: 15;
     color: #fff;
  
+}
+.descricao-curso:hover{
+    color: #FFC727;
 }
    
 .descricao-duracao-curso{
@@ -566,7 +669,6 @@ form label{
     color: #FFC727;
     cursor: pointer;
 }
-
 
 #rodape-footer{
     display: flex;
