@@ -11,6 +11,8 @@ const checkoutRouter = require('./src/routes/checkoutRouter');
 const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
+const methodOverride = require('method-override');
+const getInfoDatabase = require('./src/utils/getInfoDatabase');
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users'); 
@@ -24,10 +26,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
-// view engine setup
 app.set('views', path.join(__dirname,'src','views'));
+app.use(methodOverride('_method'))
 
-app.listen(port, () => console.log(`O servidor está sendo executado na porta ${port}`))
 
 app.get('/', function (req,res) {
   res.render('home')
@@ -49,6 +50,19 @@ app.get('/login', function (req,res) {
   res.render('login')
 })
 
+app.post('/login', function (req,res){
+  const users = getInfoDatabase('users')
+  const { email, password } = req.body
+
+  const userExist = users.find(user => {
+    return user.email == email && user.password == password
+  })
+
+  if (!userExist) return res.redirect('/login')
+
+  return res.redirect('/profileUser')
+})
+
 app.get('/cadastro', function (req,res) {
   res.render('cadastre')
 })
@@ -61,7 +75,7 @@ app.get('/checkout', function (req,res) {
   res.render('checkout')
 })
 
-
+app.listen(port, () => console.log(`O servidor está sendo executado na porta ${port}`))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
