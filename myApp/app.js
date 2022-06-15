@@ -15,10 +15,19 @@ const carrinhoRouter = require('./src/routes/carrinhoRouter');
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users'); 
 
+const port = 3002;
 var app = express();
 
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
 // view engine setup
 app.set('views', path.join(__dirname,'src','views'));
+
+app.listen(port, () => console.log(`O servidor está sendo executado na porta ${port}`))
 
 app.get('/', function (req,res) {
   res.render('home')
@@ -52,13 +61,7 @@ app.get('/checkout', function (req,res) {
   res.render('checkout')
 })
 
-app.set('view engine', 'ejs');
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

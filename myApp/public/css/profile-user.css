@@ -360,6 +360,8 @@ form label{
 
 #container-mylerning {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #mylearning {
@@ -457,6 +459,8 @@ form label{
 }
 
 #container-mycourses {
+    display: flex;
+    flex-direction: column;
     width: 98%;
     height: auto;
     margin: 0px 0px 0px 15px;
@@ -483,9 +487,11 @@ form label{
 
 .listagem-cursos{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 500px;
 }
    
 .imagem-descritiva-curso{
