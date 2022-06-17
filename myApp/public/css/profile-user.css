@@ -86,40 +86,44 @@ header #logo-header{
 #opcoes-user-header{
     display: flex;
     justify-content: space-around;
-    margin: 0px 30px;
-    background-color: none;
-}
- 
-.button-card-course{
-    border-radius: 5px;
+    margin: 0px 15px 0px 0px;
+    background-color: #1C2124;
     border: none;
+
+}
+
+.button-card-course{
     width: 37px;
     height: 38px;
     cursor: pointer;
-    margin: 2px;
-    padding: 2px;
-    padding: 1px;
-    background-color: none;
-}
-   
-.button-favorite-course{
-    border-radius: 5px;
+    margin: 0px 15px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    background-color: #1C2124;
     border: none;
+    cursor: pointer;
+
+}
+
+.button-favorite-course{
     width: 37px;
     height: 38px;
-    padding: 3px;
-    padding: 1px;
-    background-color: none;
+    margin: 0px 15px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    background-color: #1C2124;
+    border: none;
+    cursor: pointer;
+
 }
 
 .button-profile-ser{
-    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    background-color: #1C2124;;
     border: none;
-    width: 37px;
-    height: 38px;
-    padding: 3px;
-    padding: 1px;
-    background-color: none;
+    color: none;
+    cursor: pointer;
 }
 
 #container-bodyprofileuser {
@@ -139,7 +143,6 @@ header #logo-header{
 #icone-acessibilidade {
     margin-top: 20px;
 }
-
 
 .artuser {
     margin: -16px;
@@ -450,15 +453,6 @@ form label{
     cursor: pointer;
 }
 
-validationsUser
-#container-mylerning {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-
-main
 #mylearning {
     display: flex;
     justify-content: space-between;
@@ -469,6 +463,7 @@ main
     background-color: #393C3D;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
+
 
 #scheduletime{
     display: flex;
@@ -492,7 +487,7 @@ main
 
 
 #scheduletime h1 {
-    color: #fff;
+    color: white;
     font-size: 32px;
     width: 650px;
     height: 80px;
@@ -501,7 +496,7 @@ main
 
 }
 #scheduletime h2 {
-    color: #fff;;
+    color: white;
     font-size: 18px;
     width: 820px;
     height: 160px;
@@ -553,11 +548,10 @@ main
 }
 
 #container-mycourses {
-    display: flex;
-    flex-direction: column;
     width: 98%;
     height: auto;
     margin: 0px 0px 0px 15px;
+    
 }
 
 .icone-seta-rolagem-esquerda{
@@ -580,17 +574,12 @@ main
 
 .listagem-cursos{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-validationsUser
-    height: 500px;
-
     background-color: #393C3D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
-main
 }
    
 .imagem-descritiva-curso{
@@ -612,7 +601,7 @@ main
     height: 300px;
     margin: 0px 0px 0px 90px;
     padding: 0px 0px 0px 15px;
-    color: #fff;
+    color: white
 }
   
 .descricao-curso{
@@ -622,6 +611,7 @@ main
     color: #fff;
  
 }
+
 .descricao-curso:hover{
     color: #FFC727;
 }
@@ -670,34 +660,133 @@ main
     cursor: pointer;
 }
 
-#rodape-footer{
+#container-footer {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #0F1113;
+   }
+
+   #logo-footer{
+    margin: 30px;
+    padding-bottom: 20px;
+    width: 260px;
+    height: 260px;
+   }
+
+   #area-navegacao-footer{
+    display: flex;
+   }
+
+   .conteudo-nav{
+    margin: 0px 50px;
+    color: #fff;
+   }
+
+   .titulo-nav{
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 23px;
+   }
+
+   .topico-nav{
+    color: #C0C0C0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 19px;
+    margin: 7px 0px
+   }
+
+
+   #newsletter-footer{
+    color: #fff;
+    margin-right: 50px;
+   }
+
+   #newsletter-footer, h2{
+    font-size: 27px;
+   }
+
+   #newsletter-detalhes{
+    margin: 7px 0px 15px 0px;
+    font-size: 18px;
+    font-weight: 300;
+   }
+
+   #campo-newsletter{
+    display: flex;
+   }
+
+   #email-newsletter{
+    width: 270px;
+    height: 37px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #263238D9;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 16px;
+   }
+
+   #email-newsletter:focus{
+    outline: none;
+   }
+
+   #botao-newsletter{
+    width: 155px;
+    height: 37px;
+    margin: 8px 0px 0px 0px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+    cursor: pointer;
+   }
+
+   #faixa-footer{
+    border-top: 1px #C0C0C0 solid;
+    width: 2px;
+    height: 1px;
+   }
+
+   #rodape-footer{
     display: flex;
     justify-content: space-between;
     background-color: #0F1113;
     padding-top: 15px;
-}
-   
-#marca-skooby{
+   }
+
+   #marca-skooby{
     color: #C0C0C0;
     margin: 0px 40px 30px
-}
-  
-#redes-sociais{
+   }
+   
+   #redes-sociais{
     margin-right: 50px;
-}
-   
-.icones-redes-sociais{
+   }
+
+   .icones-redes-sociais{
     margin: 10px 15px 30px;
-}
-   
-.icones-redes-sociais{
+   }
+
+   .icones-redes-sociais{
     width: 35px;
     height: 35px;
     cursor: pointer;
     transition: all 0.5s;
-}
-   
-.icones-redes-sociais:hover{
+   }
+
+   .icones-redes-sociais:hover{
     width: 30px;
     height: 30px;
-}
+   }
