@@ -1,0 +1,20 @@
+[
+ {
+  "id": 1,
+  "name": "Mariana Moraes",
+  "email": "mariana@skoobytech.com",
+  "password": "mariana1234"
+ },
+ {
+  "id": 2,
+  "name": "Nathalia Grott",
+  "email": "nathalia@skoobytech.com",
+  "password": "nathalia1234"
+ },
+ {
+  "id": 3,
+  "name": "James Oliveira",
+  "email": "james@skoobytech.com",
+  "password": "james1234"
+ }
+]
