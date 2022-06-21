@@ -1,8 +1,8 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const productsRouter = require('./src/routes/productsRouter');
 const homeRouter = require('./src/routes/homeRouter');
 const internalProductRouter = require('./src/routes/internalProductRouter');
@@ -11,12 +11,15 @@ const checkoutRouter = require('./src/routes/checkoutRouter');
 const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
 const carrinhoRouter = require('./src/routes/carrinhoRouter');
+const methodOverride = require('method-override');
+const logMiddleware = require('./src/middlewares/log');
+const authMiddleware = require('./src/middlewares/auth');
 
-var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users'); 
+const indexRouter = require('./src/routes/index');
+const usersRouter = require('./src/routes/users'); 
+const auth = require('./src/middlewares/auth');
 
-const port = 3002;
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -24,47 +27,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
-// view engine setup
 app.set('views', path.join(__dirname,'src','views'));
-
-app.listen(port, () => console.log(`O servidor está sendo executado na porta ${port}`))
-
-app.get('/', function (req,res) {
-  res.render('home')
-})
-
-app.get('/products', function (req,res) {
-  res.render('products')
-})
-
-app.get('/product/id', function (req,res) {
-  res.render('internalProduct')
-})
-
-app.get('/profileuser', function (req,res) {
-  res.render('profileUser')
-})
-
-app.get('/login', function (req,res) {
-  res.render('login')
-})
-
-app.get('/cadastro', function (req,res) {
-  res.render('cadastre')
-})
-
-app.get('/carrinho', function (req,res) {
-  res.render('cart')
-})
-
-app.get('/checkout', function (req,res) {
-  res.render('checkout')
-})
-
-
+app.use(methodOverride('_method'));
+app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', profileUserRouter)
 app.get('/products', productsRouter);
 app.get('/home', homeRouter);
 app.get('/product/id', internalProductRouter);
@@ -76,10 +45,12 @@ app.get('/cart', carrinhoRouter);
 
 app.get('/', (req,res) => res.render('/products'))
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+app.post('/login', authMiddleware)
+
+// // catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // error handler
 app.use(function(err, req, res, next) {
