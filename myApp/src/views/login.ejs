@@ -31,9 +31,9 @@
   </div>
 
   <span id="login-user">
-   <form action="/profileUser" method="post">
-    <label class="icone-email" for="e-mail"><i class="far fa-envelope"></i></label>
-    <input class="input" type="email" id="e-mail" name="e-mail" placeholder="E-mail" required>
+   <form action="/login" method="post">
+    <label class="icone-email" for="email"><i class="far fa-envelope"></i></label>
+    <input class="input" type="email" id="email" name="email" placeholder="Email" required>
     <br>
     <label class="icone-senha" for="senha"><i class="fa-solid fa-unlock"></i></label>
     <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
@@ -42,6 +42,9 @@
     <a id="esqueceu-senha" href="#">Esqueci minha senha</a>
     <br>
     <button id="botao-entrar">ENTRAR</button>
+    <% if(error) { %>
+      <p><%=error%></p>
+    <% } %>
    </form>
    <p>Não tem uma conta?<a id="cadastre-se" href="/cadastro">CADASTRE-SE</a></p>
 
