@@ -1,124 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-   }
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ list-style-type: none;
+ text-decoration: none;
+}
 
 header {
-    width: 100%;
-    height: 82px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 4px #121212;
-    background-color: #1C2124;
-    position: relative;
-    z-index: 16;
-   }
+ width: 100%;
+ height: 82px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0px 0px 4px #121212;
+ background-color: #1C2124;
+ position: relative;
+ z-index: 16;
+}
 
-   header #menu-entradas{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-   }
+header #menu-entradas{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ align-items: center;
+ margin-left: 15px;
+}
 
-   header nav .nav-header{
-    font-size: 15px;
-    margin: 0px 20px;
-   }
-   
-   .topico-header{
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-   }
-   
-   .topico-header:hover {
-    color: #01B671;
-   }
-   
-   header #logo-header{
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-   }
-   
-   #area-pesquisa{
-    border-radius: 15px;
-    background-color: #373B3E;
-    width: 500px;
-    height: 37px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 10px;
-    padding: 0px 5px;
-   }
-   
-   #campo-pesquisa{
-    color: #C0C0C0;
-    font-size : 15px;
-    background-color: #373B3E;
-    align-items: center;
-    margin-left: 12px;
-    border: none;
-    outline: none;
-    width: 100%;
-    height: 30px;
-   }
-   
-   #botao-pesquisar {
-    background-color: #373B3E;
-    border: none;
-    cursor: pointer;
-    margin: 4px 9px 0px 0px;
-   }
-   
-   #opcoes-user-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px 30px;
-   }
-   
-   #icone-carrinho{
-    cursor: pointer;
-    margin-top: 2px;
-   }
-   
-   #link-entrar{
-    color: #fff;
-    font-weight: 700;
-    margin: 0px 20px;
-   }
-   
-   #botao-cadastro {
-    width: 125px;
-    height: 35px;
-    margin-bottom: 3px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    color: #263238D9;
-    font-weight: 800;
-    cursor: pointer;
-    font-size: 14px;
-   }
-   
-   #botao-acessibilidade{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    cursor: pointer;
-    padding-top: 20px;
-    background-color: #1C2124;
-   }
+header nav .nav-header{
+ font-size: 20px;
+ margin: 0px 20px;
+ padding-left: 20px;
+}
+
+.topico-header{
+ color: #fff;
+ text-decoration: none;
+ transition: color 0.3s;
+}
+
+.topico-header:hover {
+ color: #01B671;
+}
+
+header #logo-header{
+ margin-right: 20px;
+ margin-bottom: 10px;
+ padding-left: 20px;
+}
+
+#area-pesquisa{
+ border-radius: 15px;
+ background-color: #373B3E;
+ width: 520px;
+ height: 43px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0px 10px;
+ padding: 0px 5px;
+}
+
+#campo-pesquisa{
+ color: #C0C0C0;
+ font-size : 15px;
+ background-color: #373B3E;
+ align-items: center;
+ margin-left: 12px;
+ border: none;
+ outline: none;
+ width: 100%;
+ height: 30px;
+}
+
+#botao-pesquisar {
+ background-color: #373B3E;
+ border: none;
+ cursor: pointer;
+ margin: 4px 9px 0px 0px;
+}
+
+#opcoes-user-header{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: 0px 30px;
+}
+
+#icone-carrinho{
+ cursor: pointer;
+ margin-top: 20px;
+}
+
+#icone-coracao {
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#botao-acessibilidade{
+ display: flex;
+ width: 100%;
+ justify-content: flex-end;
+ align-items: flex-start;
+ cursor: pointer;
+ padding-top: 20px;
+ background-color: #1C2124;
+}
    
    body{
     background: #1D2225;
@@ -127,9 +117,6 @@ header {
    }
 
    .text-start {
-    height: 35px;
-    left: 70px;
-    top: 136px;
     font-weight: 800;
     font-size: 30px;
     line-height: 35px;
@@ -142,66 +129,280 @@ header {
     background: #1D2225;
     width: 1280px;
     height: 2079px;
+    display: flex;
+    flex-direction: column;
     }
 
     .carrinho {
     height: 599px;
     width: 620px;
-    left: 70px;
-    top: 229px;
     background: #171A1D;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     margin-left: 70px;
+    display: flex;
+    flex-direction: column;
     }
 
-    .text-p {
-    height: 28px;
+    .carrinho > div {
+    display: flex;
+    }
+
+    .caixa {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #C0C0C0;
+    margin: 15px;
+    }
+
+    #text-p {
     width: 124px;
     font-weight: 900;
     font-size: 20px;
-    text-align: center;
     margin-left: 33px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
     }
 
-    .img-185 {
-    width: 185px;
-    height: 99px;
-    left: 106px;
-    top: 328px;
-    margin-top: 15px;
-    margin-left: 36px;
+    .img-curso {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 15px;
+    
+    }
+
+    #img-ilustrativa {
+    width: 100%;
+    height: 100px;
+    }
+
+    .descricao {
+    display: flex;
+    flex-direction: column;
     }
 
     .descricao-curso{
-    font-weight: 400;
+    font-weight: 370;
     font-size: 17px;
-    height: 5px;
-    margin-left: 75px;
-    margin-top: 12px; 
+    margin-bottom: 1px;
     }
        
     .descricao-duracao-curso{
-    font-weight: 400;
+    font-weight: 370;
     font-size: 17px;
-    height: 5px;
-    margin-left: 75px;
-    margin-top: 12px;
+    margin-bottom: 1px;
     }
 
-    .btn{
-    margin-left: 75px;
-    margin-top: 15px;
+    button {
+    width: 130px;
     }
        
     .valor-curso{
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 450;
+    font-size: 22px;
     display: flex;
-    justify-content:flex-end;
     margin-right: 30px;
-    padding-bottom: 50px;
+    margin-top: 30px;
     }
+
+    .icone-seta-rolagem-esquerda{
+      width: 60px;
+      height: 50px;
+      border-radius: 2px;
+      background-color: #393C3D;
+      padding: 14px 5px;
+    }
+
+     .icone-seta-rolagem-direita{
+      width: 60px;
+      height: 50px;
+      border-radius: 2px;
+      background-color: #393C3D;
+      padding: 14px 5px;
+      justify-content: end;
+     }
+
+     .total {
+    width: 454px;
+    height: 611px;
+    background: #262D31;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+   }
+  
+    .total > div {
+      display: flex;
+    }
+
+      #total {
+      width: 124px;
+      font-weight: 900;
+      font-size: 25px;
+      margin-left: 33px;
+      margin-top: 25px;
+      display: flex;
+      }
+
+      #valor-total {
+      width: 200px;
+      font-weight: 650;
+      font-size: 35px;
+      margin-left: 33px;
+      margin-top: 25px;
+      display: flex;
+      }
+
+      #descontos{
+      width: 186px;
+      height: 22px;
+      font-weight: 900;
+      font-size: 20px;
+      margin-left: 33px;
+      margin-top: 35px;
+      display: flex;
+      }
+
+      #remover-cupom{
+      width: 200px;
+      height: 8px;
+      font-weight: 300;
+      font-size: 10px;
+      margin-left: 33px;
+      display: flex;
+      }
+
+      #botao-finalizar {
+      background-color: #DC611B;
+      color: #263238D9;
+      width: 330px;
+      height: 53px;
+      border-radius: 5px;
+      border: none;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 25px;
+      transition: all 0.7s;
+      margin-left: 65px;
+      margin-top: 50px;
+      }
+
+      #icone-bandeiras{
+      width: 190px;
+      height: 100px;
+      margin-top: 25px;
+      margin-left: 130px;
+      }
+
+      #pix {
+        margin-left: 160px;
+        margin-top: 20px;
+      }
+
+      #botao-cupom {
+      width: 230px;
+      height: 37px;
+      margin-left: 32px;
+      }
+
+      #aplicar-bt {
+        margin-left: 5px;
+      }
+
+      .favoritos {
+        height: 631px;
+        width: 620px;
+        background: #171A1D;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        margin-left: 70px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        }
+    
+        .favoritos > div {
+        display: flex;
+        }
+
+        .caixa-2 {
+          display: flex;
+          margin: 20px 0px 0 44px;
+          border-bottom: 1px solid #C0C0C0;
+          }
+
+        #seus-favoritos {
+          width: 150px;
+          font-weight: 900;
+          font-size: 20px;
+          margin-left: 33px;
+          margin-top: 15px;
+          display: flex;
+          justify-content: center;
+          }
+
+        .imagem-curso {
+          width: 78px;
+          height: 42px;
+          margin-bottom: 18px;
+        }
+        
+        #ilustrativa {
+          width: 100%;
+          height: 50px;
+        }
+        
+        .descri-fav {
+          display: flex;
+          flex-direction: column;
+          margin-left: 25px;
+        }
+
+        .descri-curso {
+          width: 97px;
+          font-weight: 320;
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 1px;
+        }
+
+        .duracao-curso {
+          width: 97px;
+          font-weight: 320;
+          font-size: 12px;
+          margin-bottom: 1px;
+        }
+
+        .preco-curso {
+          width: 97px;
+          font-weight: 320;
+          font-size: 12px;
+          margin-bottom: 1px;
+        }
+
+        .imagem-carrinho {
+          display: flex;
+          margin: 190px 100px;
+        }
+
+        #mover-carrinho {
+          width: 122px;
+          height: 32px;
+          font-size: 11px;
+          background-color: #C4C4C4;
+          color: #000000;
+          border-radius: 5px;
+          margin-left: 170px;
+          margin-top: 10px;
+        }
+
+        #icone-desfavoritar {
+          margin-left: 10px;
+          margin-top: 10px;
+        }
         
    #container-footer {
     width: 100%;
