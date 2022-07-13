@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    <%-include("partials/head", {title: 'Detalhes'}) %> </head>
+<body>
+    <div>
+     <h2>Detalhe do Curso: <%= courseFound.name %> </h2>
+    <div>
+        <img src="/myApp/public/images/cursos/<%= courseFound.image %>" alt="Imagem do Curso">
+        <p><% courseFound.description %></p>
+
+        <h2><%= courseFound.name %></h2>
+        <p><%= formatPrice(courseFound.price) %></p>
+        <a href="/courses/edit/<%= courseFound.id %>">Editar Curso</a>
+
+        <form action="/courses/delete/<%= courseFound.id %>?_method=DELETE" method="POST">
+     
+        <button type="submit">APAGAR</button>
+
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+
