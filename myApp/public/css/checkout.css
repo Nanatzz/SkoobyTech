@@ -84,24 +84,25 @@ header #logo-header{
 
 #opcoes-user-header{
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: center;
  margin: 0px 30px;
+ width: 20vh;
 }
-
-#icone-carrinho{
- cursor: pointer;
- margin-top: 2px;
-}
-
 
 #botao-acessibilidade{
  display: flex;
- justify-content: flex-end;
- align-items: flex-start;
  cursor: pointer;
  padding-top: 20px;
- background-color: #1C2124;
+ background-color: none;
+ transition: all 1s;
+ position: fixed;
+ right: 0px;
+ z-index: 16;
+}
+
+#botao-acessibilidade:hover{
+ width: 35px;
 }
 
 body{
@@ -117,6 +118,7 @@ body{
  align-items: flex-start;
  width: 100%;
  height: 200px;
+ padding-top: 70px;
 }
 
 #compra-realizada{
@@ -163,6 +165,14 @@ body{
  font-weight: 700;
  border-radius: 5px;
  margin: 50px 40px 0px 0px;
+ transition: all 0.5s;
+}
+
+#botoes-user button:hover{
+ background-color: #fff;
+ color: #01B671;
+ font-weight: 800;
+ font-size: 21px;
 }
 
 #link-meu-aprendizado{
@@ -243,7 +253,7 @@ body{
 }
 
 #email-newsletter{
- width: 240px;
+ width: 270px;
  height: 37px;
  background-color: #fff;
  border-radius: 5px;
@@ -251,7 +261,11 @@ body{
  display: flex;
  align-items: center;
  padding-left: 10px;
- font-size: 15px;
+ font-size: 16px;
+}
+
+#email-newsletter:focus{
+ outline: none;
 }
 
 #botao-newsletter{

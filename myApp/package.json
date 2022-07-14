@@ -11,7 +11,14 @@
     "debug": "~2.6.9",
     "ejs": "^3.1.8",
     "express": "~4.16.1",
+    "express-validator": "^6.14.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  }
+    "method-override": "^3.0.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.18"
+  },
+  "description": "Integrative Project: Skooby Tech is an e-commerce project for education and technology. Trade in online courses for the area of technology. \r Members: Mariana Moraes Oliva, James Oliveira & Nathalia Grott. Digital house class, 2022.",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
 }

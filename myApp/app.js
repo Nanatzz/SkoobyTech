@@ -1,82 +1,80 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const getInfoDatabase = require("./src/utils/getInfoDatabase")
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const productsRouter = require('./src/routes/productsRouter');
+const coursesRouter = require('./src/routes/coursesRouter');
 const homeRouter = require('./src/routes/homeRouter');
 const internalProductRouter = require('./src/routes/internalProductRouter');
 const profileUserRouter = require('./src/routes/profileuserRouter');
 const checkoutRouter = require('./src/routes/checkoutRouter');
 const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
-const carrinhoRouter = require('./src/routes/carrinhoRouter');
+const cartRouter = require('./src/routes/cartRouter');
+const playcourseRouter = require('./src/routes/playcourseRouter');
+const methodOverride = require('method-override');
+const logMiddleware = require('./src/middlewares/log');
+const authMiddleware = require('./src/middlewares/auth');
 
-var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users'); 
+const indexRouter = require('./src/routes/index');
+const usersRouter = require('./src/routes/users'); 
+const auth = require('./src/middlewares/auth');
 
-var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname,'src','views'));
-
-app.get('/', function (req,res) {
-  res.render('home')
-})
-
-app.get('/products', function (req,res) {
-  res.render('products')
-})
-
-app.get('/checkout', function (req,res) {
-  res.render('checkout')
-})
-
-app.get('/course', function (req,res) {
-  res.render('internalProduct')
-})
-
-app.get('/profileuser', function (req,res) {
-  res.render('profileUser')
-})
-
-app.get('/login', function (req,res) {
-  res.render('login')
-})
-
-app.get('/cadastro', function (req,res) {
-  res.render('cadastro')
-})
-
-app.get('/carrinho', function (req,res) {
-  res.render('carrinho')
-})
-
-app.set('view engine', 'ejs');
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname,'src','views'));
+app.use(methodOverride('_method'));
+app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/', profileUserRouter)
 app.get('/products', productsRouter);
+app.get('/courses', coursesRouter);
 app.get('/home', homeRouter);
-app.get('/course', internalProductRouter);
+app.get('/product/id', internalProductRouter);
 app.get('/profileUser', profileUserRouter);
 app.get('/checkout', checkoutRouter);
 app.get('/login', loginRouter);
-app.get('/cadastro', cadastroRouter);
-app.get('/carrinho', carrinhoRouter);
+app.get('/cadastre', cadastroRouter);
+app.get('/cart', cartRouter);
+app.get('/playcourse', playcourseRouter);
 
-app.get('/', (req,res) => res.render('/products'))
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+
+app.get('/', (req,res) => res.render('products'))
+app.get('/', (req,res) => res.render('login'))
+
+
+app.post('/login', authMiddleware)
+
+
+app.post('/', (req, res)=> {
+  const users = getInfoDatabase('courses')
+  const {email, password} = req.body
+
+  const userExists = users.find(user => {
+    return user.email === email && user.password === password
+  })
+
+  if (!userExists) return res.redirect('/')
+
+  return res.redirect('products')
 });
+
+
+// // catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // error handler
 app.use(function(err, req, res, next) {

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 4px #121212;
+    background-color: #1C2124;
+    position: relative;
+    z-index: 16;
+}
+   
+header #menu-entradas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+   
+header nav .nav-header{
+    font-size: 20px;
+    margin: 0px 20px;
+    padding-left: 20px;
+}
+   
+.topico-header{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+.topico-header:hover {
+    color: #01B671;
+}
+   
+header #logo-header{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+header #logo-full{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+  
+   
+#opcoes-user-header{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 15px 0px 0px;
+    background-color: #1C2124;
+    border: none;
+
+}
+
+.button-card-course{
+    width: 37px;
+    height: 38px;
+    cursor: pointer;
+    margin: 0px 15px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    background-color: #1C2124;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button-favorite-course{
+    width: 37px;
+    height: 38px;
+    margin: 0px 15px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    background-color: #1C2124;
+    border: none;
+    cursor: pointer;
+}
+
+.button-profile-ser{
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    background-color: #1C2124;;
+    border: none;
+    color: none;
+    cursor: pointer;
+}
+
+#container-bodyprofileuser {
+    background-color:#1D2225;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 15px 0px;
+}
+
+#botao-acessibilidade{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    cursor: pointer;
+}
+#icone-acessibilidade {
+    margin-top: 20px;
+}
+
+#container-playcourse {
+    background-color: #1D2225;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#up-playcourse {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    /* padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px; */
+}
+
+#base-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1600px;
+    height: 820px;
+    margin: 0px 15px 5px 15px;
+    background-color: #161A1D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-course {
+    height: 30px;
+    width: 320px;
+    margin: 5px 5px 5px 5px;
+    font-size: 13px;
+    color: white;
+}
+
+#playercourse {
+    margin: 5px 15px 15px 15px;
+}
+
+.player {
+    align-items: center;
+    width: 1410px;
+    height: 740px;
+}
+
+.title-classes {
+    height: 35px;
+    width: 165px;
+    font-size: 15px;
+    color: white;
+}
+
+.annotations-modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 820px;
+    margin: 0px 15px 0px 0px;
+    background-color: #161A1D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-annotations {
+    height: 30px;
+    width: 320px;
+    margin: 5px 5px 5px 5px;
+    font-size: 13px;
+    color: white;
+}
+
+.annotations {
+    width: 490px;
+    height: 600px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    color: #C0C0C0;
+    background-color: #515556;
+}
+
+#down-playcourse {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.teacher-name {
+    height: 30px;
+    width: 320px;
+    margin: 5px 5px 5px 5px;
+    font-size: 13px;
+    color: white;
+}
+
+#parceiros {
+ display: flex;
+ background-color: #833C3A;
+ width: 100%;
+ height: 40px; 
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+#titulo-parceiros {
+ color: #C0C0C0;
+ justify-content: flex-start;
+}
+
+
+#faixa-footer{
+    border-top: 1px #C0C0C0 solid;
+    width: 2px;
+    height: 1px;
+}
+   
+#rodape-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F1113;
+    padding-top: 15px;
+}
+   
+#marca-skooby{
+    color: #C0C0C0;
+    margin: 25px 40px 30px;
+}
+   
+#redes-sociais{
+    margin-right: 50px;
+}
+   
+.icones-redes-sociais{
+    margin: 10px 15px 30px;
+}
+   
+.icones-redes-sociais{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+   
+.icones-redes-sociais:hover{
+    width: 30px;
+    height: 30px;
+}
+   
