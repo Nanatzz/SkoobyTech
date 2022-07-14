@@ -12,7 +12,7 @@ const profileUserRouter = require('./src/routes/profileuserRouter');
 const checkoutRouter = require('./src/routes/checkoutRouter');
 const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
-const carrinhoRouter = require('./src/routes/carrinhoRouter');
+const cartRouter = require('./src/routes/cartRouter');
 const playcourseRouter = require('./src/routes/playcourseRouter');
 const methodOverride = require('method-override');
 const logMiddleware = require('./src/middlewares/log');
@@ -45,7 +45,7 @@ app.get('/profileUser', profileUserRouter);
 app.get('/checkout', checkoutRouter);
 app.get('/login', loginRouter);
 app.get('/cadastre', cadastroRouter);
-app.get('/cart', carrinhoRouter);
+app.get('/cart', cartRouter);
 app.get('/playcourse', playcourseRouter);
 
 

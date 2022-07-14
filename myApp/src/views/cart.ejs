@@ -2,86 +2,189 @@
 <html lang="en">
 <head>
     <%-include("partials/head") %>
-    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>SkoobyTech - Escola de Tecnologia</title>
 </head>
 <body>
     <header>
-        <%-include("partials/header") %>  
-    </header>
+        <nav id= "menu-entradas">
+          <a href= "/home"><img id="logo-header" src="images/home/logoheader.svg" alt="Logo SkoobyTech - Escola de Tecnologia"></a>
+          <a class="topico-header" href= "/home"><h2 class="nav-header">HOME</h2></a>
+          <a class="topico-header" href= "/products"><h2 class="nav-header">CATEGORIAS</h2></a>
+          <a class="topico-header" href= "#"><h2 class="nav-header">ENSINE NA SKOOBY</h2></a>
+        </nav>
+            
+        <div id= "area-pesquisa">
+          <input type="text" id="campo-pesquisa" placeholder="O que você quer aprender?">
+          <button id="botao-pesquisar" type="submit"><img src="images/products/pesquisar.svg" alt="Ícone de lupa de pesquisa"></button>
+        </div>
+            
+        <span id= "opcoes-user-header">
+          <a href= "/favoritos"><p id="link-entrar"><img id="icone-coracao" src="images/carrinho/coracao.png" alt="ícone dos favoritos"></p></a>
+          <a href="/cart"><p id="link-carrinho"><img id= "icone-carrinho" src="images/products/carrinho.svg" alt="ícone de carrinho de compras"></p></a>
+          <a href="/profileUser"><button id="botao-user"><img id="icone-user" src="images/carrinho/perfil.png" alt="ícone do usuário"></button></a>
+        </span>   
+      </header>
 
     <div id="botao-acessibilidade">
         <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
     </div>
 
-        <div class="container-fluid">
-            <h1 class="text-start">Carrinho de Compras</h1>
-            <div class="row justify-content-start vh-100">
-                <div class="col">
-                    <div class="carrinho">
-                        <h2 class="text-p"></h2>
-                        <h3 class="text-p">Seu Carrinho</h3>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            
-                                <ul class="list-unstyled">
-                                    <li class="media">
-                                        <img class="img-185" src="images/products/curso1.jpg" alt="Imagem curso1">
-                                    <div class="media-body">
-                                    </div>
-                                    </li>
-                                    <li class="media my-4">
-                                        <img class="img-185" src="images/products/curso2.jpg" alt="Imagem curso2">
-                                <div class="media-body">
-                                  
-                                </div>
-                                    </li>
-                                    <li class="media">
-                                        <img class="img-185" src="images/products/curso3.jpg" alt="Imagem curso3">
-                                <div class="media-body">
-                                </div>
-                                    </li>
-                                    </ul>
-                            
+    <div class="container-fluid">
+        <div class="row justify-content-start vh-100">
+            <div class="col">
+                <h1 class="text-start">Carrinho de Compras</h1>
+                <div class="carrinho">
+                    <p id="text-p">Seu Carrinho</p>
+                    <div class="caixa">
+                        <div class="img-curso">
+                            <img id="img-ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
                         </div>
-                        <div class="col-md-9">
-                            <p class="descricao-curso">Iniciando em JavaScript</p>
-                            <p class="descricao-duracao-curso">Duração: 35 horas</p>
-                            <button type="button" class="btn btn-secondary btn-sm">Remover do Carrinho</button>
+                            <div class="descricao">
+                                <p class="descricao-curso">Iniciando em JavaScript</p>
+                                <p class="descricao-duracao-curso">Duração: 35 horas</p>
+                                    <button class="btn btn-secondary" type="submit">Remover</button>
+                            </div>
                                 <strong class="valor-curso">R$ 49,00</strong>
-                        </div>
                     </div>
+                        
+                    <div class="caixa">     
+                        <div class="img-curso">
+                            <img id="img-ilustrativa" src="images/products/curso2.jpg" alt="imagem do curso 2">
+                        </div>
+                            <div class="descricao">
+                                <p class="descricao-curso">Iniciando em JavaScript</p>
+                                <p class="descricao-duracao-curso">Duração: 35 horas</p>
+                                    <button class="btn btn-secondary" type="submit">Remover</button>
+                            </div>
+                                <strong class="valor-curso">R$ 49,00</strong>
+                    </div>  
+                    
+                    <div class="caixa">
+                        <div class="img-curso">
+                            <img id="img-ilustrativa" src="images/products/curso3.jpg" alt="imagem do curso 3">
+                        </div>
+                            <div class="descricao">
+                                <p class="descricao-curso">Iniciando em JavaScript</p>
+                                <p class="descricao-duracao-curso">Duração: 35 horas</p>
+                                    <button class="btn btn-secondary" type="submit">Remover</button>
+                            </div>
+                            <div>
+                                <strong class="valor-curso">R$ 49,00</strong>
+                            </div>
+                    </div>
+                    <div class="icone-seta-rolagem-direita">
+                        <img src="images/products/seta-direita.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+                    </div>
+                    <div class="icone-seta-rolagem-esquerda">
+                        <img src="images/products/seta-esquerda.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
+                     </div>
+                     
+                </div>
+            </div>
+                <div class="col">
+                    <div class="total">
+                        <p id="total">Total:</p>
+                        <h2 id="valor-total">R$ 147,00</h2>
+                        <button id="botao-finalizar" type="submit">Finalizar Compra</button>
+                        <p id="descontos">Descontos e Cupons</p>
+                        <p id="remover-cupom">x Remover cupom DIGITALH</p>
+                    <div>
+                        <input id="botao-cupom" type="text" class="form-control" placeholder="Insira seu cupom aqui" aria-label="Insira seu cupom aqui" aria-describedby="btnGroupAddon">
+                        <button id="aplicar-bt" type="button" class="btn btn-light">Aplicar cupom</button>
+                    </div>
+                    <div>
+                        <img id="icone-bandeiras" src="images/cart/bandeiras.png" alt="Ícone Bandeiras">
+                    </div>
+                        <p id="pix">ou pague pelo PIX</p>
                     </div>
                 </div>
-                <!-- <div class="w-100"></div>
                 <div class="col">
-                    <div class="carrinho">
-                        <h2 class="text-p"></h2>
-                        <ul class="list-unstyled">
-                            <h3 class="text-p">Seu Carrinho</h3>
-                            <li class="media">
-                              <img class="img-185" src="images/products/curso1.jpg" alt="Imagem curso1">
-                              <div class="media-body">
-                              </div>
-                            </li>
-                            <li class="media my-4">
-                              <img class="img-185" src="images/products/curso2.jpg" alt="Imagem curso2">
-                              <div class="media-body">
-                                  
-                              </div>
-                            </li>
-                            <li class="media">
-                              <img class="img-185" src="images/products/curso3.jpg" alt="Imagem curso3">
-                              <div class="media-body">
-                              </div>
-                            </li>
-                          </ul>
+                    <div class="favoritos">
+                        <p id="seus-favoritos">Seus Favoritos</p>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                                </div>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                        </div>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                        </div>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                        </div>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                        </div>
+                        <div class="caixa-2">
+                            <div class="imagem-curso">
+                                <img id="ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
+                            </div>
+                                <div class="descri-fav">
+                                    <p class="descri-curso">Node JS do zero</p>
+                                    <p class="duracao-curso">Duração: 12 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p>
+                                </div>
+                                    <a href="/cart"><button id="mover-carrinho">Mover ao Carrinho <img id="mini-carrinho" src="images/cart/minicarrinho.png"></button></a>
+                                    <a href= "/favoritos"><p><img id="icone-desfavoritar" src="images/cart/desfavoritar.png" alt="ícone de tirar dos favoritos"></p></a>
+                        </div>
                     </div>
-                </div> -->
-            </div>
+                </div>
+                <div class="col">
+                    <div class="imagem-carrinho">
+                        <img src="images/cart/amico.png" alt="imagem carrinho ">
+                    </div>
+                </div>
+                
         </div>
-        
+    </div>
        
 </body>
 <footer>
