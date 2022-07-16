@@ -1,7 +1,7 @@
-const getInfoDatabase = require('../utils/getInfoDatabase');
+// const getInfoDatabase = require('../utils/getInfoDatabase');
 const { validationResult } = require('express-validator')
 
-const users = getInfoDatabase('users')
+// const users = getInfoDatabase('users')
 
 const UsersController = {
  index: (req,res) => {

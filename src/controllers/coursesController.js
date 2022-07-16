@@ -1,7 +1,7 @@
-const getInfoDatabase = require('../utils/getInfoDatabase')
+// const getInfoDatabase = require('../utils/getInfoDatabase')
 const formatPrice = require('../utils/formatPrice')
 
-const courses = getInfoDatabase('courses')
+// const courses = getInfoDatabase('courses')
 
 
 const coursesController = {
