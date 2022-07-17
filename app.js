@@ -1,9 +1,11 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const getInfoDatabase = require("./src/utils/getInfoDatabase")
+// const getInfoDatabase = require("./src/utils/getInfoDatabase")
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const conn = require('./src/database/conn');
+
 const productsRouter = require('./src/routes/productsRouter');
 const coursesRouter = require('./src/routes/coursesRouter');
 const homeRouter = require('./src/routes/homeRouter');
@@ -14,13 +16,14 @@ const loginRouter = require('./src/routes/loginRouter');
 const cadastroRouter = require('./src/routes/cadastroRouter');
 const cartRouter = require('./src/routes/cartRouter');
 const playcourseRouter = require('./src/routes/playcourseRouter');
+const indexRouter = require('./src/routes/index');
+const usersRouter = require('./src/routes/users'); 
+
 const methodOverride = require('method-override');
 const logMiddleware = require('./src/middlewares/log');
 const authMiddleware = require('./src/middlewares/auth');
-
-const indexRouter = require('./src/routes/index');
-const usersRouter = require('./src/routes/users'); 
 const auth = require('./src/middlewares/auth');
+const { appendFileSync } = require('fs');
 
 const app = express();
 
@@ -35,57 +38,23 @@ app.use(methodOverride('_method'));
 app.use(logMiddleware);
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', usersRouter);
 app.use('/', profileUserRouter)
-app.get('/products', productsRouter);
-app.get('/courses', coursesRouter);
-app.get('/home', homeRouter);
-app.get('/product/id', internalProductRouter);
-app.get('/profileUser', profileUserRouter);
-app.get('/checkout', checkoutRouter);
-app.get('/login', loginRouter);
-app.get('/cadastre', cadastroRouter);
-app.get('/cart', cartRouter);
-app.get('/playcourse', playcourseRouter);
+app.use('/', productsRouter);
+app.use('/', coursesRouter);
+app.use('/', homeRouter);
+app.use('/', profileUserRouter);
+app.use('/', checkoutRouter);
+app.use('/', loginRouter);
+app.use('/', cadastroRouter);
+app.use('/', cartRouter);
+app.use('/', playcourseRouter);
 
-
-
-app.get('/', (req,res) => res.render('products'))
-app.get('/', (req,res) => res.render('login'))
-
-
-app.post('/login', authMiddleware)
-
-
-app.post('/', (req, res)=> {
-  const users = getInfoDatabase('courses')
-  const {email, password} = req.body
-
-  const userExists = users.find(user => {
-    return user.email === email && user.password === password
-  })
-
-  if (!userExists) return res.redirect('/')
-
-  return res.redirect('products')
-});
-
-
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
-
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
+conn 
+ .sync()
+ .then(() => {
+  app.listen(3000);
+ })
+ .catch((err) => console.log(err));
 
 module.exports = app;
