@@ -2,23 +2,38 @@
   "name": "myapp",
   "version": "0.0.0",
   "private": true,
-"scripts": {  
-  "start": "nodemon ./app.js localhost 3000"},
-  "dependencies": {  
-    "bcryptjs": "^2.4.3",  
-    "cookie-parser": "~1.4.4",  
-    "cookie-session": "^2.0.0",  
-    "debug": "~2.6.9",  
-    "ejs": "^3.1.8",  
-    "express": "~4.16.1",  
-    "express-session": "^1.17.3",  
-    "express-validator": "^6.14.1",  
-    "http-errors": "~1.6.3",  
-    "method-override": "^3.0.0",  
-    "morgan": "~1.9.1",  
-    "mysql2": "^2.3.3",  
-    "nodemon": "^2.0.18",  
-    "sequelize": "^6.21.3",  
+  "scripts": {
+    "start": "nodemon ./app.js localhost 3000"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^2.0.0",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.8",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.1",
+    "http-errors": "~1.6.3",
+    "method-override": "^3.0.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3",
     "session-file-store": "^1.5.0"
+  },
+  "description": "Integrative Project: Skooby Tech is an e-commerce project for education and technology. Trade in online courses for the area of technology. \r Members: Mariana Moraes Oliva, James Oliveira & Nathalia Grott. Digital house class, 2022.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoraesMari/SkoobyTech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoraesMari/SkoobyTech/issues"
+  },
+  "homepage": "https://github.com/MoraesMari/SkoobyTech#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
