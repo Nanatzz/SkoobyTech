@@ -4,7 +4,7 @@ const path = require('path');
 // const getInfoDatabase = require("./src/utils/getInfoDatabase")
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const conn = require('./src/database/conn');
+// const conn = require('./src/database/conn');
 
 const productsRouter = require('./src/routes/productsRouter');
 const coursesRouter = require('./src/routes/coursesRouter');
@@ -50,11 +50,11 @@ app.use('/', cadastroRouter);
 app.use('/', cartRouter);
 app.use('/', playcourseRouter);
 
-conn 
- .sync()
- .then(() => {
-  app.listen(3000);
- })
- .catch((err) => console.log(err));
+// conn 
+//  .sync()
+//  .then(() => {
+//   app.listen(3000);
+//  })
+//  .catch((err) => console.log(err));
 
 module.exports = app;
