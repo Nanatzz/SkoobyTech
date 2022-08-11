@@ -4,7 +4,7 @@ const path = require('path');
 // const getInfoDatabase = require("./src/utils/getInfoDatabase")
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
- const conn = require('./src/database/conn');
+const conn = require('./src/database/conn');
 
 const productsRouter = require('./src/routes/productsRouter');
 const coursesRouter = require('./src/routes/coursesRouter');
