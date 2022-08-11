@@ -32,4 +32,4 @@ controls.forEach((control) => {
   });
 });
 
-export default cart;
+module.exports = cart;

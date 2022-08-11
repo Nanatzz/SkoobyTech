@@ -79,37 +79,16 @@ header #logo-header{
  background-color: #373B3E;
  border: none;
  cursor: pointer;
- margin: 4px 9px 0px 0px;
+ margin: 4px 9px 0px 0px;  
 }
 
 #opcoes-user-header{
- display: flex;
- justify-content: space-around;
- align-items: center;
- margin: 0px 30px;
-}
-
-#icone-carrinho{
- cursor: pointer;
- margin-top: 20px;
-}
-
-#icone-coracao {
-  cursor: pointer;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-#icone-user {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
-  padding: 5px 0px 0px 0px;
-  background-color: #1C2124;;
-  border: none;
-  color: none;
-  cursor: pointer;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+  width: 20vh;
+ }
 
 #botao-acessibilidade{
  display: flex;
