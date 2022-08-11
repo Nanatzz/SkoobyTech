@@ -4,6 +4,7 @@
     <%-include("partials/head") %>
     <link rel="stylesheet" href="css/cart.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>SkoobyTech - Escola de Tecnologia</title>
 </head>
 <body>
@@ -21,9 +22,9 @@
         </div>
             
         <span id= "opcoes-user-header">
-          <a href= "/favoritos"><p id="link-entrar"><img id="icone-coracao" src="images/carrinho/coracao.png" alt="ícone dos favoritos"></p></a>
+          <a href= "/favoritos"><p id="link-entrar"><img id="icone-coracao" src="images/cart/coracao.png" alt="ícone dos favoritos"></p></a>
           <a href="/cart"><p id="link-carrinho"><img id= "icone-carrinho" src="images/products/carrinho.svg" alt="ícone de carrinho de compras"></p></a>
-          <a href="/profileUser"><button id="botao-user"><img id="icone-user" src="images/carrinho/perfil.png" alt="ícone do usuário"></button></a>
+          <a href="/profileUser"><img id="icone-user" src="images/cart/perfil.png" alt="ícone do usuário"></a>
         </span>   
       </header>
 
@@ -36,7 +37,7 @@
             <div class="col">
                 <h1 class="text-start">Carrinho de Compras</h1>
                 <div class="carrinho">
-                    <p id="text-p">Seu Carrinho</p>
+                    <p class="text-p">Seu Carrinho</p>
                     <div class="caixa">
                         <div class="img-curso">
                             <img id="img-ilustrativa" src="images/products/curso1.jpg" alt="imagem do curso 1">
@@ -74,12 +75,12 @@
                                 <strong class="valor-curso">R$ 49,00</strong>
                             </div>
                     </div>
-                    <div class="icone-seta-rolagem-direita">
+                    <!-- <div class="icone-seta-rolagem-direita">
                         <img src="images/products/seta-direita.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
                     </div>
                     <div class="icone-seta-rolagem-esquerda">
                         <img src="images/products/seta-esquerda.svg" alt="ícone seta de rolagem para visualiação de mais cursos da categoria">
-                     </div>
+                     </div> -->
                      
                 </div>
             </div>
@@ -182,12 +183,50 @@
                         <img src="images/cart/amico.png" alt="imagem carrinho ">
                     </div>
                 </div>
-                
-        </div>
+                    
+                    <div class="container">
+                        <p class="text">Talvez você goste</p>
+                        <button class="arrow-left control" aria-label="Previous image">◀</button>
+                        <button class="arrow-right control" aria-label="Next Image">▶</button>
+                        <div class="gallery-wrapper">
+                          <div class="gallery">
+                            <img src="images/products/curso5.jpg" alt=".." class="current-item">
+                                    <div><p class="descri-curso">Inglês para Programadores</p>
+                                    <p class="duracao-curso">Duração: 190 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p></div>
+                            <img src="images/products/curso6.jpg" alt=".." class="item">
+                                    <div><p class="descri-curso">Inglês para Programadores</p>
+                                    <p class="duracao-curso">Duração: 190 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p></div>
+                            <img src="images/products/curso3.jpg" alt=".." class="item">
+                                    <div><p class="descri-curso">Inglês para Programadores</p>
+                                    <p class="duracao-curso">Duração: 190 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p></div>
+                            <img src="images/products/curso2.jpg" alt=".." class="item">
+                                    <div><p class="descri-curso">Inglês para Programadores</p>
+                                    <p class="duracao-curso">Duração: 190 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p></div>
+                            <img src="images/products/curso1.jpg" alt=".." class="item">
+                                    <div><p class="descri-curso">Inglês para Programadores</p>
+                                    <p class="duracao-curso">Duração: 190 horas</p>
+                                    <p class="preco-curso">R$ 149,90</p></div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
     </div>
-       
+    <span id="parceiros">
+        <p id="titulo-parceiros">Com a parceria de empresas Tech em todo Brasil</p>
+        <img class="icones-parceiros" src="images/products/parceiro-stripe.svg" alt="Ícone parceiro Stripe">
+        <img class="icones-parceiros" src="images/products/parceiro-google.svg" alt="Ícone parceiro Google">
+        <img class="icones-parceiros" src="images/products/perceiro-adobe.svg" alt="Ícone parceiro Adobe">
+        <img class="icones-parceiros" src="images/products/parceiro-github.svg" alt="Ícone parceiro GitHub">
+        <img class="icones-parceiros" src="images/products/parceiro-DH.svg" alt="Ícone parceiro DigitalHouse">
+    </span>
+    <footer>
+        <%-include("partials/footer") %>
+    </footer>
+    <script src="public/js/cart.js"></script>
 </body>
-<footer>
-    <%-include("partials/footer") %>
-   </footer>
+
 </html>

@@ -100,6 +100,17 @@ header #logo-header{
   margin-top: 20px;
 }
 
+#icone-user {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  padding: 5px 0px 0px 0px;
+  background-color: #1C2124;;
+  border: none;
+  color: none;
+  cursor: pointer;
+}
+
 #botao-acessibilidade{
  display: flex;
  width: 100%;
@@ -155,7 +166,7 @@ header #logo-header{
     margin: 15px;
     }
 
-    #text-p {
+    .text-p {
     width: 124px;
     font-weight: 900;
     font-size: 20px;
@@ -291,10 +302,10 @@ header #logo-header{
       }
 
       #icone-bandeiras{
-      width: 190px;
+      width: 280px;
       height: 100px;
       margin-top: 25px;
-      margin-left: 130px;
+      margin-left: 90px;
       }
 
       #pix {
@@ -362,25 +373,25 @@ header #logo-header{
         }
 
         .descri-curso {
-          width: 97px;
+          width: 120px;
           font-weight: 320;
           font-size: 12px;
           line-height: 14px;
-          margin-bottom: 1px;
+          margin-bottom: 2px;
         }
 
         .duracao-curso {
-          width: 97px;
+          width: 120px;
           font-weight: 320;
           font-size: 12px;
-          margin-bottom: 1px;
+          margin-bottom: 2px;
         }
 
         .preco-curso {
-          width: 97px;
+          width: 120px;
           font-weight: 320;
           font-size: 12px;
-          margin-bottom: 1px;
+          margin-bottom: 2px;
         }
 
         .imagem-carrinho {
@@ -403,7 +414,90 @@ header #logo-header{
           margin-left: 10px;
           margin-top: 10px;
         }
+
+        .container {
+          position: relative;
+          padding: 15px;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .text {
+            width: 200px;
+            font-weight: 900;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: left;
+        }
         
+        .gallery-wrapper {
+          overflow-x: auto;
+          margin-left: 100px;
+        }
+        
+        .arrow-left, .arrow-right {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: auto;
+          bottom: 0;
+          font-size: 20px;
+          line-height: 250px;
+          width: 40px;
+          color: #fff;
+          transition: all 600ms ease-in-out;
+          background: linear-gradient(to left, transparent 0%, black 200%);
+          opacity: 0.1;
+          cursor: pointer;
+          border: none;
+        }
+        
+        .arrow-left:hover, 
+        .arrow-right:hover {
+          opacity: 1;
+        }
+        
+        .arrow-right {
+          right: 0;
+          left: auto;
+          text-align: right;
+          background: linear-gradient(to right, transparent 0%, black 200%);
+        }
+        
+        .gallery {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 15px;
+        }
+
+        .gallery > img {
+          width: 170px;
+          height: 120px;
+          margin-top: 50px;
+        }
+
+        .gallery > div {
+          margin-top: 70px;
+        }
+        
+        .item {
+          width: 250px;
+          height: 250px;
+          flex-shrink: 0;
+          transition: all 600ms ease-in-out;
+          opacity: 0.5;
+        }
+        
+        .current-item {
+          opacity: 1;
+        }
+        
+        .gallery-wrapper::-webkit-scrollbar {
+          display: none;
+        }
+
    #container-footer {
     width: 100%;
     height: 240px;
@@ -446,7 +540,21 @@ header #logo-header{
     margin: 7px 0px
    }
    
-   
+   #parceiros {
+    display: flex;
+    background-color: #833C3A;
+    width: 100%;
+    height: 40px; 
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #titulo-parceiros {
+    color: #C0C0C0;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  
    #newsletter-footer{
     color: #fff;
     margin-right: 50px;
