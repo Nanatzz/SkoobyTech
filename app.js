@@ -50,11 +50,5 @@ app.use('/', cadastroRouter);
 app.use('/', cartRouter);
 app.use('/', playcourseRouter);
 
-conn 
-  .sync()
-  .then(() => {
-  app.listen(3000);
-  })
-  .catch((err) => console.log(err));
 
-module.exports = app;
+app.listen(3000, () => console.log('Aplicação iniciada em http://localhost:3000'));  
