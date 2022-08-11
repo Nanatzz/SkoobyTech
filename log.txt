@@ -1131,3 +1131,12 @@ A rota /login foi acessada.
 A rota /home foi acessada. 
 A rota /cart foi acessada. 
 A rota /public/js/cart.js foi acessada. 
+A rota /products foi acessada. 
+A rota /course foi acessada. 
+A rota /favicon.ico foi acessada. 
+A rota /courses foi acessada. 
+A rota /playcourse foi acessada. 
+A rota /home foi acessada. 
+A rota /login foi acessada. 
+A rota /login foi acessada. 
+A rota /cadastre foi acessada. 

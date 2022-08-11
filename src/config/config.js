@@ -1,8 +1,8 @@
-{
+module.exports = {
     "development": {
-      "username": "nanatz",
+      "username": "jamesoliveira",
       "password": "",
-      "database": "projeto-integrador",
+      "database": "skooby_tech",
       "host": "127.0.0.1",
       "dialect": "mysql",
       "define": {
