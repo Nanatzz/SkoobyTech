@@ -126,6 +126,21 @@ header #logo-header{
     cursor: pointer;
 }
 
+.button-logout {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 0px 0px 5px;
+    margin: 5px 5px 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    background-color: #1C2124;
+}
+
+
+
 #container-bodyprofileuser {
     background-color:#1D2225;
     width: 100%;
@@ -176,6 +191,7 @@ header #logo-header{
 
 #containermyaccount {
     display: flex;
+    justify-content: space-evenly;
 }
 
 #myaccount {
