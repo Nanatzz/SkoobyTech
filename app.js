@@ -17,7 +17,6 @@ const cartRouter = require('./src/routes/cartRouter');
 const playcourseRouter = require('./src/routes/playcourseRouter');
 const indexRouter = require('./src/routes/index');
 const studentsRouter = require('./src/routes/studentsRouter'); 
-const logMiddleware = require('./src/middlewares/log');
 const studentsValidator = require('./src/middlewares/studentsValidator');
 const coursesValidator = require('./src/middlewares/coursesValidator');
 const { appendFileSync } = require('fs');
@@ -38,7 +37,6 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'src','views'));
 app.use(methodOverride('_method'));
 app.use(cookieParser());
-app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use('/', studentsRouter);
