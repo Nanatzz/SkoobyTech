@@ -1,24 +1,26 @@
 // const getInfoDatabase = require('../utils/getInfoDatabase')
 const formatPrice = require('../utils/formatPrice')
-
+const { Courses } = require('../models')
 // const courses = getInfoDatabase('courses')
 
 
 const coursesController = {
-  index: (res, req) => {
-    res.render('courses',{
+  index: async (res, req) => {
+    const courses = await Courses.findAll()
+
+    req.render('courses',{
         courses,
         formatPrice
     })
   },
 
-  details: (res, req) => {
+  detailsCourse: (res, req) => {
     const  { id } = req.params
-    const courseFound = courses.find((courses) => {
-       return course.id === Number(id)
+    const courseFound = Courses.find((courses) => {
+       return courses.id === Number(id)
     })
 
-    res.render('detailcourse', {
+    res.render('detail-course', {
         courseFound,
         formatPrice
     })
