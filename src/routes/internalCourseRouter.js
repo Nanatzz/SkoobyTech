@@ -4,5 +4,6 @@ const router = express.Router();
 
 router.get('/courses', coursesController.index)
 router.get('/detailcourse/:id', coursesController.detailsCourse)
+router.get('/course-list', coursesController.index)
 
 module.exports = router;

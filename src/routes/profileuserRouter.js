@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 // const studentsValidator = require('../middlewares/studentsValidator')
-const studentsController = require('../controllers/studentsController');
+const studentIsLogged = require('../middlewares/studentsValidator')
+const profileUserController = require('../controllers/profileUserController');
 
-router.get('/profileUser', studentsController.loginStudents);
-router.get('/login', studentsController.renderLogin);
-router.post('/login', studentsController.loginStudents);
+router.get('/profileUser', profileUserController.renderProfileUser);
+
+
 
 module.exports = router;

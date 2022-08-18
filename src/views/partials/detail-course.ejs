@@ -3,12 +3,12 @@
 <head>    <%-include("partials/head", {title: 'Detalhes'}) %> </head>
 <body>
     <div>
-     <h2>Detalhe do Curso: <%= courseFound.name %> </h2>
+     <h2>Detalhe do Curso: <%= courseFound.nome %> </h2>
     <div>
         <img src="/myApp/public/images/cursos/<%= courseFound.image %>" alt="Imagem do Curso">
         <p><% courseFound.description %></p>
 
-        <h2><%= courseFound.name %></h2>
+        <h2><%= courseFound.nome %></h2>
         <p><%= formatPrice(courseFound.price) %></p>
         <a href="/courses/edit/<%= courseFound.id %>">Editar Curso</a>
 
