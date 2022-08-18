@@ -33,7 +33,7 @@
     <section id= "upprofileuser">
       <img class ="artuser"src= "/images/profileuser/artuser.svg" alt="Art Profile User">
        <div id= "noticeprofileuser">
-            <h1>Olá, Fulaninho da TI</h1>
+            <h1>Olá, <%= user.nome %></h1>
             <h2>Este é seu perfil. Aqui você consegue editar dados pessoais, ver seu progresso nos cursos iniciados e dar uma olhadinha nos favoritos.</h2>
           </section>
         </div>
@@ -100,7 +100,7 @@
           </div>
         </section>
         <div class="user-name">
-          <p>Fulaninho da Ti</p>
+          <p><%= user.nome %></p>
         </div>
         
         <section id = "bio-user-up">

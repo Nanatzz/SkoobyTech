@@ -1,32 +1,7 @@
-// // const studentsController = require('../controllers/studentsController');
-// // const { Students } = require('../models')
+const studentIsLogged = (req, res, next) => {
+    if (!req.cookies.user) return res.redirect('/login')
+    req.user = JSON.parse(req.cookies.user)
+    next();
+}  
 
-
-
-// const studentsValidator = {
-//   index: async (req, res) => {
-//     const students = await Students.findAll()
-  
-//     res.render('login',{
-//         students
-//       })
-      
-//  },
-
-//  renderLogin: (req,res) => {
-//   res.render('login')
-//  },
-
-//  loginStudents: async (req,res) => {
-//   const { email, senha } = req.body;
-//   const students =  await Students.findAll()
-
-
-//   if(students.senha !== senha && students.email !== email){
-//    res.render('login', {error: "Usuário ou senha incorretos"})
-//   }
-//   res.render('/profileUser')
-//  }}
-
-//  module.exports = studentsValidator
-
+module.exports = studentIsLogged

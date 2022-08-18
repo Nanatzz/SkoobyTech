@@ -1,31 +1,32 @@
 // const getInfoDatabase = require('../utils/getInfoDatabase')
-const { Students } = require('../models')
+const { Students } = require('../models');
 
 const studentsController = {
- index: async (req,res) => {
-const students = await Students.findAll()
-
-  res.render('login', {
-   students
-  })
- },
 
  renderLogin: (req,res) => {
   res.render('login')
  },
 
  loginStudents: (req,res) => {
-  const { id_aluno, email, senha } = req.body;
-  const students = Students.findAll()
+  const { email, senha } = req.body;
+  Students.findOne({where: {email} }).then(user => {
+    if (!user){
+      alert("Usuário ou senha incorretos");
+      res.redirect('/login')
+    }
+    if (user.senha !== senha) {
+      alert("Usuário ou senha incorretos");
+      res.redirect('/login')
+    } 
 
-  if (!students){
-    res.render('login', {error: "Usuário ou senha incorretos"})
-  }
-
-  if(students.id_aluno !== id_aluno && students.password !== senha && students.email !== email){
-   res.render('login', {error: "Usuário ou senha incorretos"})
-  }
-  res.render('profileUser')
+    res.cookie('user', JSON.stringify({
+      id: user.id_aluno,
+      nome: user.nome,
+      email: user.email 
+    }))
+    res.redirect('/profileUser')
+  })
+  
  }
 }
 

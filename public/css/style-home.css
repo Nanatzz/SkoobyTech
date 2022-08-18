@@ -348,3 +348,33 @@ header #menu-entradas{
   width: 30px;
   height: 30px;
  }
+
+ /* @media (min-width: 320px){
+  body{
+    background-color: #1C2124;
+  }
+  header {
+    width: 320px;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 4px #121212;
+    background-color: #1C2124;
+    position: relative;
+    z-index: 16;
+  }
+
+    img arthome {
+    display: flex;
+    min-width: 950px;
+    align-items: center;
+    justify-content: center;
+ } 
+}
+
+@media (min-height: 568){
+  body{
+    background-color: #1C2124;
+  }
+} */
