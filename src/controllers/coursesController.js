@@ -31,9 +31,11 @@ const coursesController = {
        return courses.id === Number(id)
     })
 
-    res.render('detail-course', {
+    res.render('internalCourse', {
         courseFound,
-        formatPrice
+        categorias,
+        formatPrice,
+        filterByCategory
     })
   }
 }

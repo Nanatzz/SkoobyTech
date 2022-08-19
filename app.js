@@ -8,7 +8,6 @@ const methodOverride = require('method-override');
 
 const coursesRouter = require('./src/routes/coursesRouter');
 const homeRouter = require('./src/routes/homeRouter');
-const detailCourseRouter = require('./src/routes/detailCourseRouter');
 const profileUserRouter = require('./src/routes/profileuserRouter');
 const checkoutRouter = require('./src/routes/checkoutRouter');
 const internalCourseRouter = require('./src/routes/internalCourseRouter')
@@ -44,7 +43,6 @@ app.use('/', coursesRouter);
 app.use('/', internalCourseRouter);
 app.use('/', homeRouter);
 app.use('/', cadastroRouter);
-app.use('/', detailCourseRouter);
 
 app.use(studentIsLogged);
 app.use('/', profileUserRouter);
