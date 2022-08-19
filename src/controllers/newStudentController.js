@@ -5,10 +5,22 @@
 
 // const NewStudentController = {
 //   index: async (res, req) => {
-//     const courses = await Courses.findAll()
+//     const { nome, email, senha } = req.body
+//     const user = await Students.findOne({where: {email}});
+//     const { error } = cadastroValidador.validate(req.body, {abortEarly: false});
 
-//     req.render('courses',{
-//         courses,
-//         formatPrice
-//     })
-//   }}
+//     if (error) {
+//         res.redirect('cadastro', {errors: error.details});
+//     }
+//     const body = {
+//         nome,
+//         email,
+//         senha: bcrypt.hashSync(senha, 10)
+//     }
+//     const newUser = await Students.create(body).then(() => {
+//         res.redirect("/login")
+//     }).catch(error = res.send(error))
+//    }
+// }
+
+// module.exports = newStudentController
