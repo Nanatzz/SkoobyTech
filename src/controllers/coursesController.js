@@ -1,20 +1,31 @@
-// const getInfoDatabase = require('../utils/getInfoDatabase')
 const formatPrice = require('../utils/formatPrice')
+const filterByCategory = require('../utils/filterByCategory')
 const { Courses } = require('../models')
-// const courses = getInfoDatabase('courses')
+
 
 
 const coursesController = {
-  index: async (res, req) => {
-    const courses = await Courses.findAll()
+  index: (req, res) => {
+    Courses.findAll().then(courses => {
+    const categorias = []
 
-    req.render('courses',{
+    courses.map(course => {
+      if (categorias.indexOf(course.categoria) === -1) {
+        categorias.push(course.categoria)
+      }
+    })
+
+      res.render('courses',{
         courses,
-        formatPrice
+        categorias,
+        formatPrice,
+        filterByCategory
+    })
+    
     })
   },
 
-  detailsCourse: (res, req) => {
+  detailsCourse: (req, res) => {
     const  { id } = req.params
     const courseFound = Courses.find((courses) => {
        return courses.id === Number(id)

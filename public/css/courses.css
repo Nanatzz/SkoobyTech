@@ -143,6 +143,7 @@ header #logo-header{
 
 #container-categorias{
  display: flex;
+ flex-direction: column;
  color: #fff;
  flex-wrap: wrap;
  margin-bottom: 50px;
@@ -150,7 +151,6 @@ header #logo-header{
 
 .categoria{
  width: 100%;
- margin: 0px 0px 50px 0px;
  padding-bottom: 80px;
 }
 
@@ -190,6 +190,7 @@ header #logo-header{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ margin: 50px 0px 120px 0px;
  width: 100%;
  position: relative;
 

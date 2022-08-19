@@ -192,20 +192,20 @@ header #logo-header{
 #containermyaccount {
     display: flex;
     justify-content: space-evenly;
+    margin: 0pxgit branch;
 }
 
 #myaccount {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 15px 0px 0px 15px;
+    margin: 17px 0px 0px 15px;
     padding: 15px 15px 0px 0px;
-    width: 950px;
+    width: 965px;
     height: 650px;
     border-radius: 0px 0px 10px 10px;
     background-color: #393c3d8d;
-    color: white;
-    
+    color: white; 
 }
 
 #myaccount p{
@@ -247,7 +247,7 @@ header #logo-header{
 .myaccountgradient {
     color: white;
     font-size: 10px;
-    width: 950px;
+    width: 965px;
     height: 530px;
     padding: 15px 0px 0px 15px;
     background-color: #393C3D;
@@ -350,10 +350,9 @@ form label{
 
 .user-photo {
     width: 500px;
-    height: 230px;
-    margin: -148px 0px -82px 125px;
+    height: 210px;
+    margin: -131px 0px 0px 125px;
     padding: 0px 0px 0px 0px;
-    background-color: none;
 }
 
 .edit-profile-photo-icon {
@@ -421,7 +420,7 @@ form label{
     margin: 5px 0px 0px 15px;
     padding: 5px 0px 0px 0px;
     width: 98%;
-    height: 219px;
+    height: 221px;
     background-color: #393c3d8d;
     border-radius: 0px 0px 10px 10px;
 } 

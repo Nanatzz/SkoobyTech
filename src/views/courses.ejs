@@ -14,50 +14,26 @@
         <img id="icone-acessibilidade" src="images/courses/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
       </div>
       <main id= "container-courses">
-        <% courses.forEach((course) => {%>
         <section id="container-categorias">
          <div class="categoria">
-          <a href="#"><h2 class="titulo-categorias">Cursos em Back-End</h2></a>
-          
-          <%-include("partials/course-list") %>
-          <a class="link-ver-todos" href="#">Ver todos</a>
-         </div>
-      
-         <div class="categoria">
-          <a href="#"><h2 class="titulo-categorias">Cursos em Front-End</h2></a>
-      
-          <%-include("partials/course-list") %>
-          <a class="link-ver-todos" href="#">Ver todos</a>
-         </div>
-      
-         <div class="categoria">
-          <a href="#"><h2 class="titulo-categorias">Cursos Full Stack</h2></a>
-      
-          <%-include("partials/course-list") %>
-          <a class="link-ver-todos" href="#">Ver todos</a>
-         </div>
-      
-         <div class="categoria">
-          <a href="#"><h2 class="titulo-categorias">Metodologias de Desenvolvimento</h2></a>
-          <%-include("partials/course-list") %>
-          <a class="link-ver-todos" href="#">Ver todos</a>
-         </div>
+          <a href="/courses/detail/<%courses.categoria%>"><h2 class="titulo-categorias">Cursos em Back-End</h2></a>
+          <% categorias.forEach(categoria => { %>
+          <%- include('partials/course-list', { courses: filterByCategory(courses, categoria) }) %>
+          <% }) %>
+         </div>   
         </section>
-      
+        
         <span id="parceiros">
-         <p id="titulo-parceiros">Com a parceria de empresas Tech em todo Brasil</p>
-         <img class="icones-parceiros" src="images/courses/parceiro-stripe.svg" alt="Ícone parceiro Stripe">
-         <img class="icones-parceiros" src="images/courses/parceiro-google.svg" alt="Ícone parceiro Google">
-         <img class="icones-parceiros" src="images/courses/perceiro-adobe.svg" alt="Ícone parceiro Adobe">
-         <img class="icones-parceiros" src="images/courses/parceiro-github.svg" alt="Ícone parceiro GitHub">
-         <img class="icones-parceiros" src="images/courses/parceiro-DH.svg" alt="Ícone parceiro DigitalHouse">
-        </span>
+          <p id="titulo-parceiros">Com a parceria de empresas Tech em todo Brasil</p>
+          <img class="icones-parceiros" src="images/courses/parceiro-stripe.svg" alt="Ícone parceiro Stripe">
+          <img class="icones-parceiros" src="images/courses/parceiro-google.svg" alt="Ícone parceiro Google">
+          <img class="icones-parceiros" src="images/courses/perceiro-adobe.svg" alt="Ícone parceiro Adobe">
+          <img class="icones-parceiros" src="images/courses/parceiro-github.svg" alt="Ícone parceiro GitHub">
+          <img class="icones-parceiros" src="images/courses/parceiro-DH.svg" alt="Ícone parceiro DigitalHouse">
+         </span>
+
       </main>   
-  
-    <footer>
-      <%-include("partials/footer") %>
-    </footer>
-    <% }) %>
+      
     </body>
 <footer>
    <%-include("partials/footer") %>
